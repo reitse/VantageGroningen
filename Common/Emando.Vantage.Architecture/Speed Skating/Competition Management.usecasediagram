@@ -1,0 +1,557 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="f00b1360-cc53-42c4-9382-f57ebf94cc11" name="Overview" linkedPackageId="793fa503-f43f-450c-9972-e63990d771ee" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="f8d71d8f-2451-4a3b-be40-90268cebb76c" name="Competition Manager" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e8220727-921d-4455-adb1-e01bce1ea7e6" />
+        <targetEnds>
+          <association Id="24536f95-84cc-4675-9d73-0d0e79ca8938" isDerived="false" sourceEndRoleName="Competition Manager" targetEndRoleName="List competitions" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="604ec03a-8719-4088-8cba-910bbb2655c1" LastKnownName="List competitions" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="22fb1d2d-0bad-4c1a-802a-5542418c5f37" name="Competition Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="84a3ba19-95fb-4a42-a011-a10fa59c2372" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a1a53c89-3252-4d23-9d2c-88d177c8a474" name="List competitions" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="eeebf429-2df0-486a-aea8-1b944045b200" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="664c1932-532a-4ef0-bbc6-3d0d5ea8d054" />
+          </association>
+          <association Id="eff2f71b-d75d-4eac-aeff-446cee676fae" isDerived="false" sourceEndRoleName="Competition Manager" targetEndRoleName="Create competition" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="0fe8de2c-732f-4957-9e0e-dc8073717d84" LastKnownName="Create competition" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="230b6414-7f6b-43a5-96f0-b91e6e5f0057" name="Competition Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="3d075bb3-b99b-4065-b5e1-067445427dc0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2b4ed58a-4ecd-4be6-a046-48dc14bb5dc3" name="Create competition" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c4493176-9b2e-4c9e-a945-8e99d74a76e3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="93ddc253-2fe0-4db3-8d32-4ce6d6f33457" />
+          </association>
+          <association Id="a7d9fa40-ca5b-434d-9682-8a4a6a9e9ec4" isDerived="false" sourceEndRoleName="Competition Manager" targetEndRoleName="Edit competition" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9c5cb7b6-ae4e-4301-afb8-14c614eae034" LastKnownName="Edit competition" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b86fdadf-7922-4a04-b50e-334aac9e25c5" name="Competition Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="73c2d056-fb8b-4013-8794-57276a1f556a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c4ceb780-f66a-41f5-b034-b1f4880c2c59" name="Edit competition" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3483c08f-5ba5-4645-8799-3fa2693ecf0a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9fd564c6-23d4-4170-b83b-1db504d0210b" />
+          </association>
+          <association Id="92d65fbb-788b-4272-8510-8edb7b3ac311" isDerived="false" sourceEndRoleName="Competition Manager" targetEndRoleName="View competition" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1241e865-a844-4728-a768-fb7fc3066536" LastKnownName="View competition" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="86270fef-f25f-488a-886f-7618d345df36" name="Competition Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="07105173-19f4-4937-94e2-1259cd37d203" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f8a8da07-b1f2-457b-bf6d-569b610e5d28" name="View competition" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="62e58f8c-2f52-4844-a487-6e0617bbf3c7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="921c540e-b536-4e48-b439-c8ea962b5538" />
+          </association>
+          <association Id="747c4734-e3e2-47d6-9c53-2232e2b7d579" isDerived="false" sourceEndRoleName="Competition Manager" targetEndRoleName="Export competition" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="ebd86627-7476-4fd3-aa8e-05f3bdfb1879" LastKnownName="Export competition" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b0e3263b-7b15-497c-832a-7dd36437a31b" name="Competition Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="939a1993-875c-41e1-8172-6d14c67caca7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ad1b9b7b-3a0e-4b4c-b550-c816615b7fb2" name="Export competition" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4bef2ccf-0439-4095-aaab-a05f34981619" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="344c9e23-521e-4339-ae0e-460a72750711" />
+          </association>
+          <association Id="88da6bad-735e-43b5-bb1e-6254184a71ca" isDerived="false" sourceEndRoleName="Competition Manager" targetEndRoleName="Import competition" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2cbe0b68-f355-4691-b3a7-ddc91e3c6db7" LastKnownName="Import competition" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="96fa16e8-5bc1-4590-bf9f-60d5d78b28b3" name="Competition Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="99533d56-caa2-416c-a0f0-5eefcdf35936" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d494e129-8ae6-4dca-bcc8-fc1ad866907f" name="Import competition" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="bfb882bc-b9c9-4b0a-af13-f181f36724bb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5327004a-4ba5-43fd-8cbb-b510252f36ba" />
+          </association>
+          <association Id="33743a0f-e9aa-44c8-b4d1-acdb6fce2637" isDerived="false" sourceEndRoleName="Competition Manager" targetEndRoleName="Login" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9e085a76-3b35-4a71-955c-8af8d2481b6a" LastKnownName="Login" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4ced7874-2633-4278-9771-b2ad4d02bfa5" name="Competition Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="df8f937d-40f9-40ce-acf8-5d0efef91e8e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b6bed7f6-56b9-49a5-b7e4-2c82739934b5" name="Login" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="335e5eca-0187-4ca7-92c8-55f3429a36af" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d67f0eae-0527-4149-bcc7-4bcd4a2952b1" />
+          </association>
+          <association Id="e05a827e-3efb-461c-bebf-6dc8040de996" isDerived="false" sourceEndRoleName="Competition Manager" targetEndRoleName="Register user" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="2492a034-8ead-402e-a3ba-1cc78c3f9b01" LastKnownName="Register user" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="479f885b-5973-46d0-8cee-46344a75b465" name="Competition Manager" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b8b4fbdf-16ff-4b6c-8eb6-9a37ccc3661d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e50cf36f-b502-403f-917d-ee6e54e40e40" name="Register user" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ba03c9dd-a536-4da5-8d26-70e268214144" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d11cfb55-9893-4151-8caf-e6fbfc815291" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="604ec03a-8719-4088-8cba-910bbb2655c1" name="List competitions" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1c335b13-5ae3-4dec-80e5-3325d8e8b993" />
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" name="Competition Management" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0d808033-2108-4d66-8112-4ec3fec05a65" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="0fe8de2c-732f-4957-9e0e-dc8073717d84" name="Create competition" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="47016a0a-088a-4a09-9177-8a77fe5636d3" />
+        <extendedCases>
+          <extend Id="b32a4cbb-0b25-4d07-8abe-69b564d7dc3e">
+            <useCaseMoniker Id="9c5cb7b6-ae4e-4301-afb8-14c614eae034" LastKnownName="Edit competition" />
+            <elementDefinition Id="1563796a-9f06-43a1-b56d-16543a78f9dd" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="9c5cb7b6-ae4e-4301-afb8-14c614eae034" name="Edit competition" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="55f38a5f-b636-4773-adf7-97889123f53e" />
+        <additions>
+          <include Id="1e56c838-abdd-4943-805f-1ec6767c907c">
+            <useCaseMoniker Id="368a2baf-9388-4d99-8643-68771f963595" LastKnownName="Edit competitor list" />
+            <elementDefinition Id="f9f79448-43be-437d-8477-c1f077bca593" />
+          </include>
+          <include Id="ee1e722a-3c41-48c3-8181-b57c51db0721">
+            <useCaseMoniker Id="fd4b801e-6b35-46aa-952a-619ea1777bc5" LastKnownName="Create competitor list" />
+            <elementDefinition Id="e707bc5f-2914-42cb-93e8-c56c4c350114" />
+          </include>
+          <include Id="014410f8-7290-4d2c-a8e7-0dc04db24b5c">
+            <useCaseMoniker Id="64d77628-0e1c-4386-a225-59c780591d0a" LastKnownName="Create distance" />
+            <elementDefinition Id="341fd2fd-2aeb-45fe-8d74-b458f069e10f" />
+          </include>
+          <include Id="08301886-90c3-4749-ab24-9270ee636e37">
+            <useCaseMoniker Id="2496f50a-5079-4fc0-aefe-76fabc109a8c" LastKnownName="Edit distance" />
+            <elementDefinition Id="7821efad-3f52-43f5-8b40-f46446faf5bd" />
+          </include>
+          <include Id="838d22e5-01a8-496a-95eb-21a82cb9fd15">
+            <useCaseMoniker Id="461071f9-f5eb-4a35-b385-de580fedc59c" LastKnownName="List distances" />
+            <elementDefinition Id="5ea63763-7b52-4c73-9126-292230981ecc" />
+          </include>
+          <include Id="fa2ed99c-9c79-4234-af4c-0dbef8019840">
+            <useCaseMoniker Id="c0e60e84-25be-47c8-96ec-fab223039fa0" LastKnownName="View distance" />
+            <elementDefinition Id="00311885-36bb-4c97-b025-3da28f07aa00" />
+          </include>
+          <include Id="a7bd1b0a-3256-47e3-8ac9-c0e7afa411b7">
+            <useCaseMoniker Id="c0cc1695-5ba9-4bed-99bb-f8e94c24d1db" LastKnownName="Create competitor group" />
+            <elementDefinition Id="d2b4825d-0d04-47bc-9fdd-5ee1f32a7e61" />
+          </include>
+          <include Id="fc9f1131-652f-46f8-b728-d59798fab0ab">
+            <useCaseMoniker Id="d343b1e3-8407-45d5-8be0-85dcdf490dcc" LastKnownName="Edit competitor group" />
+            <elementDefinition Id="3a299573-38d6-46c7-81ca-5c372eaad73c" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="368a2baf-9388-4d99-8643-68771f963595" name="Edit competitor list" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0f88978f-7141-47cd-b383-5667cb42c74f" />
+        <additions>
+          <include Id="53f6f04c-7711-49d1-a186-f0abee997bc9">
+            <useCaseMoniker Id="6a93983e-fadf-4ab6-8022-2a5eef1870ad" LastKnownName="Edit competitors" />
+            <elementDefinition Id="5556ee75-dc56-4ece-81f9-254ea2bdee41" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="6a93983e-fadf-4ab6-8022-2a5eef1870ad" name="Edit competitors" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="7ab782a7-316f-4ee6-b236-e1fa5c4b495b" />
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="fd4b801e-6b35-46aa-952a-619ea1777bc5" name="Create competitor list" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="99cfc8f7-8e7c-46ed-8071-c203ae91c9b8" />
+        <extendedCases>
+          <extend Id="ee9ce154-52e7-4139-a7c3-7e76db852d1f">
+            <useCaseMoniker Id="368a2baf-9388-4d99-8643-68771f963595" LastKnownName="Edit competitor list" />
+            <elementDefinition Id="b6a4fe67-5bc6-42c8-8a01-78f0f2ffc422" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="1241e865-a844-4728-a768-fb7fc3066536" name="View competition" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="95382704-db93-4a26-b1ed-f34bad59824c" />
+        <additions>
+          <include Id="86cdf1f6-baf2-40c1-be96-45721e859fdf">
+            <useCaseMoniker Id="461071f9-f5eb-4a35-b385-de580fedc59c" LastKnownName="List distances" />
+            <elementDefinition Id="f69eda19-6dae-49fb-8e89-75ac77977e4c" />
+          </include>
+          <include Id="d7b97426-a53f-4e7c-a831-56f38c5f6da6">
+            <useCaseMoniker Id="c0e60e84-25be-47c8-96ec-fab223039fa0" LastKnownName="View distance" />
+            <elementDefinition Id="2ceb26fd-a9b9-404c-85de-d52c1a5fee17" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="64d77628-0e1c-4386-a225-59c780591d0a" name="Create distance" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="56c962eb-546b-40df-8f6c-365a34dd9d4a" />
+        <extendedCases>
+          <extend Id="2fae0d09-e5ca-4909-9b3c-6aa8d66ece75">
+            <useCaseMoniker Id="2496f50a-5079-4fc0-aefe-76fabc109a8c" LastKnownName="Edit distance" />
+            <elementDefinition Id="5c486125-6d52-4b5a-804b-f743cd7d6213" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="461071f9-f5eb-4a35-b385-de580fedc59c" name="List distances" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6b1eb66d-3e25-43e0-af6a-fe18605f74b5" />
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="2496f50a-5079-4fc0-aefe-76fabc109a8c" name="Edit distance" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="db9e3bba-9322-4bc0-8e83-e739d29c1244" />
+        <additions>
+          <include Id="e69c2e9b-6c2e-41d0-940b-382d6fd5d9ff">
+            <useCaseMoniker Id="9d6bc62b-7a19-4251-9e78-4ee7e5023f55" LastKnownName="Draw distance" />
+            <elementDefinition Id="97e03684-0c0f-4a00-aabd-948334e71d91" />
+          </include>
+          <include Id="e014ce14-57de-498c-8050-b44402bd601c">
+            <useCaseMoniker Id="a9a103c2-478d-40b8-a1c2-0e251ce73bc5" LastKnownName="Assign transponders" />
+            <elementDefinition Id="fa3c7733-b6a7-4cd2-8960-ab72214f4891" />
+          </include>
+          <include Id="21c56c76-a41d-45c0-9d30-a31fc7dc38c0">
+            <useCaseMoniker Id="fc39bc6b-8b67-4df1-9f29-1e6c741d7630" LastKnownName="Edit race" />
+            <elementDefinition Id="ca49ad56-b9bd-437f-b51a-8b2e6445bea8" />
+          </include>
+          <include Id="01d227c1-1c41-4d95-b2ae-ca2e76ed432a">
+            <useCaseMoniker Id="c80b6717-6926-4b33-9468-a048a6a177bb" LastKnownName="Add race" />
+            <elementDefinition Id="2ead1b0b-9993-4f59-8772-a06fbfb39a35" />
+          </include>
+          <include Id="ba4901be-2d8f-42cb-8ace-189baf84999a">
+            <useCaseMoniker Id="dded5421-850c-43d5-ab15-5533f2a94934" LastKnownName="Delete race" />
+            <elementDefinition Id="48d34114-9c89-4623-a31e-c0e24f70a7e6" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="9d6bc62b-7a19-4251-9e78-4ee7e5023f55" name="Draw distance" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6fb9511d-35ba-4b20-901a-cca67b68d741" />
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="a9a103c2-478d-40b8-a1c2-0e251ce73bc5" name="Assign transponders" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bbbddaad-f2f0-485b-b361-2aa9b45f8814" />
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c0e60e84-25be-47c8-96ec-fab223039fa0" name="View distance" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="cf7aaae6-f1cb-419a-83e4-4320891857bc" />
+        <additions>
+          <include Id="1da20210-0844-4257-8503-371cc1e2f574">
+            <useCaseMoniker Id="7d84eedc-cadc-434c-99a2-56bc5b608ee7" LastKnownName="View race" />
+            <elementDefinition Id="1a2d34b9-739c-4089-8b4d-f927bf673096" />
+          </include>
+          <include Id="cf605a7a-e3b8-4f16-8897-c7b0ec51c859">
+            <useCaseMoniker Id="42f809da-b878-41cc-90bc-40997e054e27" LastKnownName="Generate report" />
+            <elementDefinition Id="8667a4a3-7d39-4727-88b1-d72aa57b5a0b" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="fc39bc6b-8b67-4df1-9f29-1e6c741d7630" name="Edit race" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="03c788f8-2600-425d-9237-8fc708d005f6" />
+        <additions>
+          <include Id="5c918b56-9628-4332-ac57-7449fef42237">
+            <useCaseMoniker Id="3413df8b-1395-41f5-ab10-ccbbadad57bb" LastKnownName="Edit laps" />
+            <elementDefinition Id="1eac8549-a42e-46e5-a17a-cdfae4952360" />
+          </include>
+          <include Id="93614bef-fbe0-422e-bbe1-08efb5a25792">
+            <useCaseMoniker Id="6a93983e-fadf-4ab6-8022-2a5eef1870ad" LastKnownName="Edit competitors" />
+            <elementDefinition Id="b578cafb-b448-40a2-a8f9-735e5472c0a5" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c80b6717-6926-4b33-9468-a048a6a177bb" name="Add race" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="30b0ccc3-aac7-4784-a895-c4b450f3c06b" />
+        <extendedCases>
+          <extend Id="fd57ad7a-cfa3-4707-9dc2-f894297f8b6d">
+            <useCaseMoniker Id="fc39bc6b-8b67-4df1-9f29-1e6c741d7630" LastKnownName="Edit race" />
+            <elementDefinition Id="4025a5f5-e8de-42d2-accd-9f44e4b4d81c" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="dded5421-850c-43d5-ab15-5533f2a94934" name="Delete race" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="adee7662-c8eb-46f2-8e70-747188e22535" />
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="3413df8b-1395-41f5-ab10-ccbbadad57bb" name="Edit laps" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3b71eba9-f89e-498e-b85a-854a818997c5" />
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="ebd86627-7476-4fd3-aa8e-05f3bdfb1879" name="Export competition" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="9f3c6b83-a4a6-47d8-869e-7ad0348b9e06" />
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="2cbe0b68-f355-4691-b3a7-ddc91e3c6db7" name="Import competition" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e27069f1-d5b9-45d1-a3e9-f602aef9f576" />
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="7d84eedc-cadc-434c-99a2-56bc5b608ee7" name="View race" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b102e024-e306-4c27-8c56-f27ead222f0b" />
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="9e085a76-3b35-4a71-955c-8af8d2481b6a" name="Login" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="bccefec8-7f72-4383-8480-c7841bf331eb" />
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="2492a034-8ead-402e-a3ba-1cc78c3f9b01" name="Register user" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a3133585-777c-47dc-9ba4-85ff720ea3ad" />
+        <extendedCases>
+          <extend Id="3e9aa47f-542d-452d-8db6-6c226be7ba6f">
+            <useCaseMoniker Id="9e085a76-3b35-4a71-955c-8af8d2481b6a" LastKnownName="Login" />
+            <elementDefinition Id="4e2ab486-0f59-4293-8735-cb352f8c0232" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="e8a2b196-6840-4ebb-b4ad-49c04e16ac0f" name="Approve user" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f1174717-0121-49fa-a348-9d2b3e60f269" />
+        <suppliersInternal>
+          <dependency Id="539076a4-bcbf-4292-b3c0-d977b03eaf4a">
+            <useCaseMoniker Id="2492a034-8ead-402e-a3ba-1cc78c3f9b01" LastKnownName="Register user" />
+            <elementDefinition Id="ea6548b7-9218-4dfa-9d09-23d4858517bc" />
+          </dependency>
+        </suppliersInternal>
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <useCaseModelRootHasTypes>
+      <actor Id="5d5a91a0-1cbe-4da9-af72-f91ed728bad6" name="Administrator" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e64337b8-a386-4c26-8f08-1dff60074bfa" />
+        <targetEnds>
+          <association Id="3a429a81-f276-4f0f-9f92-be6e9dcdedc1" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="Approve user" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="e8a2b196-6840-4ebb-b4ad-49c04e16ac0f" LastKnownName="Approve user" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2036d9a8-4fdb-4aa7-93c5-466e42c2c3c2" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="d38256ca-ba8e-4dbd-8e32-1bf6b98f623b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7ef16aac-7098-4b75-811c-f25ad42cefe2" name="Approve user" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="76604153-935e-47a7-8fa0-0007f0ddbbf2" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f8ae0c67-dba6-496b-8658-66fb2ca58484" />
+          </association>
+          <association Id="225a9e3f-9313-423c-b25d-59eaee2d438a" isDerived="false" sourceEndRoleName="Administrator" targetEndRoleName="Configure infrastructure" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a23668c2-df47-45af-b32a-c2f055bc738f" LastKnownName="Configure infrastructure" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="da025edf-741d-4f77-af60-88c37939026e" name="Administrator" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a3ccb71f-e1b9-4013-997c-2e39c6f0a713" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1cd07be4-a1b3-4f6d-984f-315500004d67" name="Configure infrastructure" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c08a8e82-1be0-4758-8e7d-4d83b22d0130" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ef0db1e1-e866-4150-8f25-bfeac4c6e3b8" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="a23668c2-df47-45af-b32a-c2f055bc738f" name="Configure infrastructure" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="eb7bd1ea-0ed9-4e45-9dd3-2d5f7467e443" />
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="42f809da-b878-41cc-90bc-40997e054e27" name="Generate report" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3c105abb-d510-45bc-b981-d483daffe9b8" />
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c0cc1695-5ba9-4bed-99bb-f8e94c24d1db" name="Create competitor group" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0d9d6049-f285-453b-b3c2-e530826811bd" />
+        <extendedCases>
+          <extend Id="ffe21c23-db2b-4b57-9f47-7b4de56080ba">
+            <useCaseMoniker Id="d343b1e3-8407-45d5-8be0-85dcdf490dcc" LastKnownName="Edit competitor group" />
+            <elementDefinition Id="49c3dcc7-09b6-425f-b9f2-083bd771b16c" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="d343b1e3-8407-45d5-8be0-85dcdf490dcc" name="Edit competitor group" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="35ad12dd-7e65-4f62-a811-100e814707d2" />
+        <additions>
+          <include Id="866f2e54-eb5d-49d7-8fdb-c60159934b1b">
+            <useCaseMoniker Id="6a93983e-fadf-4ab6-8022-2a5eef1870ad" LastKnownName="Edit competitors" />
+            <elementDefinition Id="0ec0e1b7-6d0c-4649-bbe3-57f79f0c78f6" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="7ac9ba3f-a46d-4088-9a20-8f7281817f3b" LastKnownName="Competition Management" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="793fa503-f43f-450c-9972-e63990d771ee" name="Sports.Architecture">
+    <elementDefinition Id="ba050b7e-0cce-40b2-b8ee-8010a7f98fba" />
+    <profileInstances>
+      <packageHasProfileInstances Id="13605731-d205-4398-b383-aee7ec48b2b1">
+        <profileInstance Id="47f16f34-cfe4-4030-bdc4-0dec5257d383" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="c614ce27-1fbd-4a1c-8f8a-2bb5bf0a7a6b">
+        <profileInstance Id="94251f37-abc5-48e6-bc72-f7918b3512a7" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

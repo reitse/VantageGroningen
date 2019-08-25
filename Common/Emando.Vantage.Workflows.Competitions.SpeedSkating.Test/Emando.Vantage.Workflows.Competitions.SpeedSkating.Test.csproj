@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A66E579B-0232-4D76-9428-8946F126EC38}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Emando.Vantage.Workflows.Competitions.SpeedSkating.Test</RootNamespace>
+    <AssemblyName>Emando.Vantage.Workflows.Competitions.SpeedSkating.Test</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework" />
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="LongTrack\IndividualPairsDistanceDisciplineExpertTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Emando.Vantage.Competitions\Emando.Vantage.Competitions.csproj">
+      <Project>{A7881150-CA7D-4327-A507-D78ABBCD703A}</Project>
+      <Name>Emando.Vantage.Competitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Components.Competitions.DbContext\Emando.Vantage.Components.Competitions.DbContext.csproj">
+      <Project>{3D27167C-5B52-4FC1-9AD6-E65205B10821}</Project>
+      <Name>Emando.Vantage.Components.Competitions.DbContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Components.Competitions.Test\Emando.Vantage.Components.Competitions.Test.csproj">
+      <Project>{04ACA203-8CA1-4A07-8D6A-627F5E48BE8C}</Project>
+      <Name>Emando.Vantage.Components.Competitions.Test</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Components.Competitions\Emando.Vantage.Components.Competitions.csproj">
+      <Project>{D4FB02B1-2805-4CD8-8602-9B063DB7C091}</Project>
+      <Name>Emando.Vantage.Components.Competitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Components.DbContext\Emando.Vantage.Components.DbContext.csproj">
+      <Project>{FAC252E0-A7B9-4C4B-8738-9A342027FA33}</Project>
+      <Name>Emando.Vantage.Components.DbContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Components.Test\Emando.Vantage.Components.Test.csproj">
+      <Project>{D8DE4245-F575-4A0B-AC18-A4CB944D400B}</Project>
+      <Name>Emando.Vantage.Components.Test</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Entities.Competitions\Emando.Vantage.Entities.Competitions.csproj">
+      <Project>{9DF95995-ABC6-4608-BCA6-13F813323F79}</Project>
+      <Name>Emando.Vantage.Entities.Competitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Workflows.Competitions.SpeedSkating\Emando.Vantage.Workflows.Competitions.SpeedSkating.csproj">
+      <Project>{3C327EE4-B2E6-4443-80A0-90D76605B3D4}</Project>
+      <Name>Emando.Vantage.Workflows.Competitions.SpeedSkating</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Workflows.Competitions\Emando.Vantage.Workflows.Competitions.csproj">
+      <Project>{3F415639-1B0D-4427-926B-1A749A2388BE}</Project>
+      <Name>Emando.Vantage.Workflows.Competitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Workflows\Emando.Vantage.Workflows.csproj">
+      <Project>{1108476a-2832-4734-93df-80c0bcc02f66}</Project>
+      <Name>Emando.Vantage.Workflows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage\Emando.Vantage.csproj">
+      <Project>{A52704C2-860C-4030-A49F-AED05096653D}</Project>
+      <Name>Emando.Vantage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,1044 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Adapter_CompetitorsCsv" xml:space="preserve">
+    <value>Competitors (CSV)</value>
+  </data>
+  <data name="Adapter_FinishLynxDatabase" xml:space="preserve">
+    <value>FinishLynx Database</value>
+  </data>
+  <data name="Adapter_LicenseesCsv" xml:space="preserve">
+    <value>Licensees (CSV)</value>
+  </data>
+  <data name="Adapter_MylapsOrbits" xml:space="preserve">
+    <value>MYLAPS Orbits</value>
+  </data>
+  <data name="Adapter_RegistrantsCsv" xml:space="preserve">
+    <value>Registrants (CSV)</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddNew" xml:space="preserve">
+    <value>Add + New</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Adres</value>
+  </data>
+  <data name="Address_City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="Address_CountryCode" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="Address_Line1" xml:space="preserve">
+    <value>Street + Number</value>
+  </data>
+  <data name="Address_Line2" xml:space="preserve">
+    <value>Apartment, floor, ...</value>
+  </data>
+  <data name="Address_PostalCode" xml:space="preserve">
+    <value>Postal Code</value>
+  </data>
+  <data name="Address_StateOrProvince" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="Address_Url" xml:space="preserve">
+    <value>Website</value>
+  </data>
+  <data name="Alert_Alert" xml:space="preserve">
+    <value>Alert</value>
+  </data>
+  <data name="Alert_CompetitorAdded" xml:space="preserve">
+    <value>The competitor is added with number {0}.</value>
+  </data>
+  <data name="Alert_Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="Alert_Confirm_No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Alert_Confirm_Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="Alert_Error" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="Alert_Info" xml:space="preserve">
+    <value>Information</value>
+  </data>
+  <data name="Alert_NoPersonLicenseFound" xml:space="preserve">
+    <value>There is no valid license found for this competitor in this competition. The results of this competitor might not be processed.</value>
+  </data>
+  <data name="Alert_RecordsLimited" xml:space="preserve">
+    <value>There are {1} records found. Only the first {0} records are shown.</value>
+  </data>
+  <data name="Alert_Warning" xml:space="preserve">
+    <value>Warning</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>(all)</value>
+  </data>
+  <data name="AutoValue" xml:space="preserve">
+    <value>(automatic)</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
+  <data name="Clone" xml:space="preserve">
+    <value>Clone</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Competition" xml:space="preserve">
+    <value>Competition</value>
+  </data>
+  <data name="Competitions" xml:space="preserve">
+    <value>Competitions</value>
+  </data>
+  <data name="CompetitionSerie" xml:space="preserve">
+    <value>Competition Serie</value>
+  </data>
+  <data name="CompetitionSeries" xml:space="preserve">
+    <value>Competition Series</value>
+  </data>
+  <data name="CompetitionSerie_Discipline" xml:space="preserve">
+    <value>Discipline</value>
+  </data>
+  <data name="CompetitionSerie_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="CompetitionSerie_RegistrationSettings" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+  <data name="CompetitionSerie_Season" xml:space="preserve">
+    <value>Season</value>
+  </data>
+  <data name="Competition_Class" xml:space="preserve">
+    <value>Class</value>
+  </data>
+  <data name="Competition_Class_0" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="Competition_Class_10" xml:space="preserve">
+    <value>Club</value>
+  </data>
+  <data name="Competition_Class_20" xml:space="preserve">
+    <value>Interclub</value>
+  </data>
+  <data name="Competition_Class_30" xml:space="preserve">
+    <value>Track</value>
+  </data>
+  <data name="Competition_Class_40" xml:space="preserve">
+    <value>Area</value>
+  </data>
+  <data name="Competition_Class_50" xml:space="preserve">
+    <value>National</value>
+  </data>
+  <data name="Competition_Class_60" xml:space="preserve">
+    <value>International</value>
+  </data>
+  <data name="Competition_CompetitorLists" xml:space="preserve">
+    <value>Competitor Lists</value>
+  </data>
+  <data name="Competition_Culture" xml:space="preserve">
+    <value>Culture</value>
+  </data>
+  <data name="Competition_Detail" xml:space="preserve">
+    <value>{0}, {1} at {2}.</value>
+  </data>
+  <data name="Competition_Discipline" xml:space="preserve">
+    <value>Discipline</value>
+  </data>
+  <data name="Competition_DistanceCombinations" xml:space="preserve">
+    <value>Distance Combinations</value>
+  </data>
+  <data name="Competition_Distances" xml:space="preserve">
+    <value>Distances</value>
+  </data>
+  <data name="Competition_EnableRegistration" xml:space="preserve">
+    <value>Enable Registration</value>
+  </data>
+  <data name="Competition_EndDate" xml:space="preserve">
+    <value>End Date</value>
+  </data>
+  <data name="Competition_Ends" xml:space="preserve">
+    <value>Ends</value>
+  </data>
+  <data name="Competition_EndTime" xml:space="preserve">
+    <value>End Time</value>
+  </data>
+  <data name="Competition_Extra" xml:space="preserve">
+    <value>Extra Information</value>
+  </data>
+  <data name="Competition_LicenseIssuer" xml:space="preserve">
+    <value>License Issuer</value>
+  </data>
+  <data name="Competition_Location" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="Competition_LocationFlags_1" xml:space="preserve">
+    <value>Track</value>
+  </data>
+  <data name="Competition_LocationFlags_2" xml:space="preserve">
+    <value>Road</value>
+  </data>
+  <data name="Competition_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Competition_RegistrationSettings" xml:space="preserve">
+    <value>Registration</value>
+  </data>
+  <data name="Competition_Reports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="Competition_Serie" xml:space="preserve">
+    <value>Serie</value>
+  </data>
+  <data name="Competition_Sponsor" xml:space="preserve">
+    <value>Sponsor</value>
+  </data>
+  <data name="Competition_StartDate" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="Competition_Starts" xml:space="preserve">
+    <value>Starts</value>
+  </data>
+  <data name="Competition_StartTime" xml:space="preserve">
+    <value>Start Time</value>
+  </data>
+  <data name="Competition_Times" xml:space="preserve">
+    <value>Times</value>
+  </data>
+  <data name="Competition_Venue" xml:space="preserve">
+    <value>Venue</value>
+  </data>
+  <data name="CompetitorList" xml:space="preserve">
+    <value>Competitor List</value>
+  </data>
+  <data name="CompetitorList_Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="CompetitorList_IsEmpty" xml:space="preserve">
+    <value>The competitor list is empty.</value>
+  </data>
+  <data name="CompetitorList_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Competitors_IsEmpty" xml:space="preserve">
+    <value>No competitors</value>
+  </data>
+  <data name="Competitor_Added" xml:space="preserve">
+    <value>Added</value>
+  </data>
+  <data name="Competitor_Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="Competitor_Class" xml:space="preserve">
+    <value>Class</value>
+  </data>
+  <data name="Competitor_DistanceCombinations" xml:space="preserve">
+    <value>Distance Combinations</value>
+  </data>
+  <data name="Competitor_LicenseKey" xml:space="preserve">
+    <value>License</value>
+  </data>
+  <data name="Competitor_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Competitor_NationalityCode" xml:space="preserve">
+    <value>Nationality</value>
+  </data>
+  <data name="Competitor_Races" xml:space="preserve">
+    <value>Races</value>
+  </data>
+  <data name="Competitor_ShortName" xml:space="preserve">
+    <value>Short Name</value>
+  </data>
+  <data name="Competitor_StartNumber" xml:space="preserve">
+    <value>Start Number</value>
+  </data>
+  <data name="Contact" xml:space="preserve">
+    <value>Contact Information</value>
+  </data>
+  <data name="Contact_Email" xml:space="preserve">
+    <value>E-mail Address</value>
+  </data>
+  <data name="Contact_OrganizationName" xml:space="preserve">
+    <value>Organization</value>
+  </data>
+  <data name="Contact_Phone" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>(custom)</value>
+  </data>
+  <data name="DefaultCountryCode" xml:space="preserve">
+    <value>USA</value>
+  </data>
+  <data name="DefaultCurrency" xml:space="preserve">
+    <value>USD</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Disable" xml:space="preserve">
+    <value>Disable</value>
+  </data>
+  <data name="Disciplines" xml:space="preserve">
+    <value>Disciplines</value>
+  </data>
+  <data name="Distance" xml:space="preserve">
+    <value>Distance</value>
+  </data>
+  <data name="DistanceCombination" xml:space="preserve">
+    <value>Distance Combination</value>
+  </data>
+  <data name="DistanceCombinationCompetitor_Reserve" xml:space="preserve">
+    <value>Substitute</value>
+  </data>
+  <data name="DistanceCombinationCompetitor_Status" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="DistanceCombinationCompetitor_Status_0" xml:space="preserve">
+    <value>Pending</value>
+  </data>
+  <data name="DistanceCombinationCompetitor_Status_1" xml:space="preserve">
+    <value>Confirmed</value>
+  </data>
+  <data name="DistanceCombinationCompetitor_Status_2" xml:space="preserve">
+    <value>Withdrawn</value>
+  </data>
+  <data name="DistanceCombinationRegistrationSettings_Price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="DistanceCombination_CategoryFilter" xml:space="preserve">
+    <value>Category Filter</value>
+  </data>
+  <data name="DistanceCombination_Class" xml:space="preserve">
+    <value>Class</value>
+  </data>
+  <data name="DistanceCombination_Distances" xml:space="preserve">
+    <value>Distances</value>
+  </data>
+  <data name="DistanceCombination_HasStarts" xml:space="preserve">
+    <value>Set indicative start time</value>
+  </data>
+  <data name="DistanceCombination_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="DistanceCombination_Number" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="DistanceCombination_StartDate" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="DistanceCombination_StartTime" xml:space="preserve">
+    <value>Start Time</value>
+  </data>
+  <data name="Distance_Classification" xml:space="preserve">
+    <value>Classification</value>
+  </data>
+  <data name="Distance_ContinuousNumbering" xml:space="preserve">
+    <value>Continuous Numbering</value>
+  </data>
+  <data name="Distance_Discipline" xml:space="preserve">
+    <value>Discipline</value>
+  </data>
+  <data name="Distance_Draw" xml:space="preserve">
+    <value>Draw</value>
+  </data>
+  <data name="Distance_Ends" xml:space="preserve">
+    <value>Ends</value>
+  </data>
+  <data name="Distance_EndWeather" xml:space="preserve">
+    <value>End Weather</value>
+  </data>
+  <data name="Distance_FirstHeat" xml:space="preserve">
+    <value>Number From</value>
+  </data>
+  <data name="Distance_IsEmpty" xml:space="preserve">
+    <value>The distance is empty.</value>
+  </data>
+  <data name="Distance_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Distance_Number" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="Distance_Reports" xml:space="preserve">
+    <value>Reports</value>
+  </data>
+  <data name="Distance_Result" xml:space="preserve">
+    <value>Result</value>
+  </data>
+  <data name="Distance_Rounds" xml:space="preserve">
+    <value>Rounds</value>
+  </data>
+  <data name="Distance_RoundsValueFormat" xml:space="preserve">
+    <value>{0} rounds</value>
+  </data>
+  <data name="Distance_StartDate" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="Distance_StartMode" xml:space="preserve">
+    <value>Start Mode</value>
+  </data>
+  <data name="Distance_Starts" xml:space="preserve">
+    <value>Starts</value>
+  </data>
+  <data name="Distance_StartTime" xml:space="preserve">
+    <value>Start Time</value>
+  </data>
+  <data name="Distance_StartWeather" xml:space="preserve">
+    <value>Start Weather</value>
+  </data>
+  <data name="Distance_TrackLength" xml:space="preserve">
+    <value>Track Length</value>
+  </data>
+  <data name="Distance_Value" xml:space="preserve">
+    <value>Distance</value>
+  </data>
+  <data name="Distance_Weather" xml:space="preserve">
+    <value>Weather</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="Enable" xml:space="preserve">
+    <value>Enable</value>
+  </data>
+  <data name="Export" xml:space="preserve">
+    <value>Export</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="Heat_IsEmpty" xml:space="preserve">
+    <value>The heat is empty.</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Import</value>
+  </data>
+  <data name="Import_Adapter" xml:space="preserve">
+    <value>Adapter</value>
+  </data>
+  <data name="Import_Files" xml:space="preserve">
+    <value>Files</value>
+  </data>
+  <data name="Invitees_Add" xml:space="preserve">
+    <value>Add Invitees</value>
+  </data>
+  <data name="Invitees_Keys" xml:space="preserve">
+    <value>Licensees</value>
+  </data>
+  <data name="Invitees_Keys_Help" xml:space="preserve">
+    <value>Separate multiple licensees using new lines, commas or semicolons.</value>
+  </data>
+  <data name="Invitee_Email" xml:space="preserve">
+    <value>E-mail Address</value>
+  </data>
+  <data name="Invitee_IsInvited" xml:space="preserve">
+    <value>Invited</value>
+  </data>
+  <data name="Invitee_Reserve" xml:space="preserve">
+    <value>Substitute</value>
+  </data>
+  <data name="LicensePurchases_Amount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="LicensePurchases_Count" xml:space="preserve">
+    <value>Count</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Login_Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="Login_Password" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="Login_RememberMe" xml:space="preserve">
+    <value>Remember me</value>
+  </data>
+  <data name="Login_UserName" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="MassStartDistance_HeatFormat" xml:space="preserve">
+    <value>Heat {0}</value>
+  </data>
+  <data name="MediumDate" xml:space="preserve">
+    <value>d MMMM y</value>
+  </data>
+  <data name="Move" xml:space="preserve">
+    <value>Move</value>
+  </data>
+  <data name="Name_FirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="Name_Initials" xml:space="preserve">
+    <value>Initials</value>
+  </data>
+  <data name="Name_Surname" xml:space="preserve">
+    <value>Surname</value>
+  </data>
+  <data name="Name_SurnamePrefix" xml:space="preserve">
+    <value>Prefix</value>
+  </data>
+  <data name="NoRecords" xml:space="preserve">
+    <value>No records found.</value>
+  </data>
+  <data name="NullValue" xml:space="preserve">
+    <value>(none)</value>
+  </data>
+  <data name="Numbering" xml:space="preserve">
+    <value>Numbering</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Other</value>
+  </data>
+  <data name="Override" xml:space="preserve">
+    <value>Override</value>
+  </data>
+  <data name="People" xml:space="preserve">
+    <value>People</value>
+  </data>
+  <data name="PersonCategories" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="PersonCategory_Code" xml:space="preserve">
+    <value>Code</value>
+  </data>
+  <data name="PersonCategory_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="PersonCompetitors" xml:space="preserve">
+    <value>People</value>
+  </data>
+  <data name="PersonLicenses" xml:space="preserve">
+    <value>Licenses</value>
+  </data>
+  <data name="PersonLicense_Categories_All" xml:space="preserve">
+    <value>(all categories)</value>
+  </data>
+  <data name="PersonLicense_Category" xml:space="preserve">
+    <value>Category</value>
+  </data>
+  <data name="PersonLicense_Class" xml:space="preserve">
+    <value>Class</value>
+  </data>
+  <data name="PersonLicense_Club" xml:space="preserve">
+    <value>Club</value>
+  </data>
+  <data name="PersonLicense_Discipline" xml:space="preserve">
+    <value>Discipline</value>
+  </data>
+  <data name="PersonLicense_Disciplines_All" xml:space="preserve">
+    <value>(all disciplines)</value>
+  </data>
+  <data name="PersonLicense_Flags" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="PersonLicense_Flag_1" xml:space="preserve">
+    <value>Temporary License</value>
+  </data>
+  <data name="PersonLicense_IsExpired" xml:space="preserve">
+    <value>Expired</value>
+  </data>
+  <data name="PersonLicense_Issuer" xml:space="preserve">
+    <value>Issuer</value>
+  </data>
+  <data name="PersonLicense_Issuers_All" xml:space="preserve">
+    <value>(all issuers)</value>
+  </data>
+  <data name="PersonLicense_Key" xml:space="preserve">
+    <value>License</value>
+  </data>
+  <data name="PersonLicense_Number" xml:space="preserve">
+    <value>Number</value>
+  </data>
+  <data name="PersonLicense_Season" xml:space="preserve">
+    <value>Season</value>
+  </data>
+  <data name="PersonLicense_Sponsor" xml:space="preserve">
+    <value>Sponsor</value>
+  </data>
+  <data name="PersonLicense_Transponders" xml:space="preserve">
+    <value>Transponders</value>
+  </data>
+  <data name="PersonLicense_ValidFrom" xml:space="preserve">
+    <value>Valid From</value>
+  </data>
+  <data name="PersonLicense_Validity" xml:space="preserve">
+    <value>Validity</value>
+  </data>
+  <data name="PersonLicense_ValidityFormat" xml:space="preserve">
+    <value>{0} to {1}</value>
+  </data>
+  <data name="PersonLicense_ValidTo" xml:space="preserve">
+    <value>Valid To</value>
+  </data>
+  <data name="Person_Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Person_BirthDate" xml:space="preserve">
+    <value>Birth Date</value>
+  </data>
+  <data name="Person_Details" xml:space="preserve">
+    <value>Personal Information</value>
+  </data>
+  <data name="Person_Email" xml:space="preserve">
+    <value>E-mail Address</value>
+  </data>
+  <data name="Person_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Person_NationalityCode" xml:space="preserve">
+    <value>Nationality</value>
+  </data>
+  <data name="Person_Phone" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="Properties" xml:space="preserve">
+    <value>Properties</value>
+  </data>
+  <data name="Race_Laps" xml:space="preserve">
+    <value>Intermediate Times</value>
+  </data>
+  <data name="Race_Laps_IsEmpty" xml:space="preserve">
+    <value>There are no intermediate times.</value>
+  </data>
+  <data name="Race_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Race_PB" xml:space="preserve">
+    <value>PR</value>
+  </data>
+  <data name="Race_PersonalBest" xml:space="preserve">
+    <value>Personal Best</value>
+  </data>
+  <data name="Race_Points" xml:space="preserve">
+    <value>Points</value>
+  </data>
+  <data name="Race_Results" xml:space="preserve">
+    <value>Results</value>
+  </data>
+  <data name="Race_Result_State" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="Race_Result_State_0" xml:space="preserve">
+    <value>(none)</value>
+  </data>
+  <data name="Race_Result_State_1" xml:space="preserve">
+    <value>Activated</value>
+  </data>
+  <data name="Race_Result_State_2" xml:space="preserve">
+    <value>Deactivated</value>
+  </data>
+  <data name="Race_Result_State_3" xml:space="preserve">
+    <value>Started</value>
+  </data>
+  <data name="Race_Result_State_4" xml:space="preserve">
+    <value>Done</value>
+  </data>
+  <data name="Race_Result_TimeInvalidReason" xml:space="preserve">
+    <value>Validity</value>
+  </data>
+  <data name="Race_Result_TimeInvalidReason_1" xml:space="preserve">
+    <value>Not Started</value>
+  </data>
+  <data name="Race_Result_TimeInvalidReason_2" xml:space="preserve">
+    <value>Not Finished</value>
+  </data>
+  <data name="Race_Result_TimeInvalidReason_3" xml:space="preserve">
+    <value>Disqualified</value>
+  </data>
+  <data name="Race_Result_TimeInvalidReason_4" xml:space="preserve">
+    <value>Withdrawn</value>
+  </data>
+  <data name="Race_Result_TimeInvalidReason_Code_1" xml:space="preserve">
+    <value>NS</value>
+  </data>
+  <data name="Race_Result_TimeInvalidReason_Code_2" xml:space="preserve">
+    <value>NF</value>
+  </data>
+  <data name="Race_Result_TimeInvalidReason_Code_3" xml:space="preserve">
+    <value>DQ</value>
+  </data>
+  <data name="Race_Result_TimeInvalidReason_Code_4" xml:space="preserve">
+    <value>WD</value>
+  </data>
+  <data name="Race_Result_TimeInvalidReason_Code_null" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Race_Result_TimeInvalidReason_null" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="Race_Time" xml:space="preserve">
+    <value>Final Time</value>
+  </data>
+  <data name="Race_Time_TimeInfo_1" xml:space="preserve">
+    <value>Fall</value>
+  </data>
+  <data name="Race_Time_TimeInfo_16" xml:space="preserve">
+    <value>National Record</value>
+  </data>
+  <data name="Race_Time_TimeInfo_2" xml:space="preserve">
+    <value>Restart</value>
+  </data>
+  <data name="Race_Time_TimeInfo_32" xml:space="preserve">
+    <value>World Record</value>
+  </data>
+  <data name="Race_Time_TimeInfo_4" xml:space="preserve">
+    <value>Personal Best</value>
+  </data>
+  <data name="Race_Time_TimeInfo_8" xml:space="preserve">
+    <value>Track Record</value>
+  </data>
+  <data name="Race_Time_TimeInfo_Code_1" xml:space="preserve">
+    <value>FL</value>
+  </data>
+  <data name="Race_Time_TimeInfo_Code_16" xml:space="preserve">
+    <value>NR</value>
+  </data>
+  <data name="Race_Time_TimeInfo_Code_2" xml:space="preserve">
+    <value>RS</value>
+  </data>
+  <data name="Race_Time_TimeInfo_Code_32" xml:space="preserve">
+    <value>WR</value>
+  </data>
+  <data name="Race_Time_TimeInfo_Code_4" xml:space="preserve">
+    <value>PB</value>
+  </data>
+  <data name="Race_Time_TimeInfo_Code_8" xml:space="preserve">
+    <value>TR</value>
+  </data>
+  <data name="Race_Transponders" xml:space="preserve">
+    <value>Transponders</value>
+  </data>
+  <data name="Race_UserResult" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="Refresh" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="Registrations" xml:space="preserve">
+    <value>Registrations</value>
+  </data>
+  <data name="RegistrationSettings_AllowedRegistrations" xml:space="preserve">
+    <value>Allowed Registrations</value>
+  </data>
+  <data name="RegistrationSettings_AllowedRegistrations_1" xml:space="preserve">
+    <value>Competition Licensees</value>
+  </data>
+  <data name="RegistrationSettings_AllowedRegistrations_2" xml:space="preserve">
+    <value>Temporary Licensees</value>
+  </data>
+  <data name="RegistrationSettings_AllowedRegistrations_4" xml:space="preserve">
+    <value>Invitations</value>
+  </data>
+  <data name="RegistrationSettings_Closes" xml:space="preserve">
+    <value>Registration Closes</value>
+  </data>
+  <data name="RegistrationSettings_CompetitionPrice" xml:space="preserve">
+    <value>Competition Price</value>
+  </data>
+  <data name="RegistrationSettings_CompetitorListGrouping" xml:space="preserve">
+    <value>Group Competitors</value>
+  </data>
+  <data name="RegistrationSettings_CompetitorListGrouping_0" xml:space="preserve">
+    <value>No Grouping</value>
+  </data>
+  <data name="RegistrationSettings_CompetitorListGrouping_1" xml:space="preserve">
+    <value>By Gender</value>
+  </data>
+  <data name="RegistrationSettings_CompetitorListGrouping_2" xml:space="preserve">
+    <value>By Category</value>
+  </data>
+  <data name="RegistrationSettings_CompetitorListUri" xml:space="preserve">
+    <value>Competitor List URL</value>
+  </data>
+  <data name="RegistrationSettings_Contact" xml:space="preserve">
+    <value>Contact</value>
+  </data>
+  <data name="RegistrationSettings_Extra" xml:space="preserve">
+    <value>Extra Information</value>
+  </data>
+  <data name="RegistrationSettings_InvitationFooter" xml:space="preserve">
+    <value>Footer</value>
+  </data>
+  <data name="RegistrationSettings_InvitationFooter_Help" xml:space="preserve">
+    <value>This text will be inserted in the e-mail template of the competitor registration system. You can use HTML mark-up.</value>
+  </data>
+  <data name="RegistrationSettings_InvitationIntroduction" xml:space="preserve">
+    <value>Introduction</value>
+  </data>
+  <data name="RegistrationSettings_Invitations" xml:space="preserve">
+    <value>Invitations</value>
+  </data>
+  <data name="RegistrationSettings_Invitees" xml:space="preserve">
+    <value>Invitees</value>
+  </data>
+  <data name="RegistrationSettings_IsClosed" xml:space="preserve">
+    <value>Closed</value>
+  </data>
+  <data name="RegistrationSettings_Opens" xml:space="preserve">
+    <value>Registration Opens</value>
+  </data>
+  <data name="RegistrationSettings_PaymentReference" xml:space="preserve">
+    <value>Payment Reference</value>
+  </data>
+  <data name="RegistrationSettings_Price" xml:space="preserve">
+    <value>Price</value>
+  </data>
+  <data name="RegistrationSettings_RegistrationUri" xml:space="preserve">
+    <value>Registration URL</value>
+  </data>
+  <data name="RegistrationSettings_RequireSerieRegistration" xml:space="preserve">
+    <value>Require Registration for Serie</value>
+  </data>
+  <data name="RegistrationSettings_SeriePrice" xml:space="preserve">
+    <value>Serie Price</value>
+  </data>
+  <data name="RegistrationSettings_Times" xml:space="preserve">
+    <value>Registration Times</value>
+  </data>
+  <data name="RegistrationSettings_Uris" xml:space="preserve">
+    <value>Links</value>
+  </data>
+  <data name="Registrations_Amount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="Registrations_ConfirmedCount" xml:space="preserve">
+    <value>Confirmed</value>
+  </data>
+  <data name="Registrations_Count" xml:space="preserve">
+    <value>Registrations</value>
+  </data>
+  <data name="Registrations_WithdrawnCount" xml:space="preserve">
+    <value>Withdrawn</value>
+  </data>
+  <data name="Renumber" xml:space="preserve">
+    <value>Renumber</value>
+  </data>
+  <data name="Report_CompetitorSignatureLists" xml:space="preserve">
+    <value>Signature List</value>
+  </data>
+  <data name="Report_Download" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="Report_Format" xml:space="preserve">
+    <value>Format</value>
+  </data>
+  <data name="Report_Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="ShortDate" xml:space="preserve">
+    <value>dd/MM/yyyy</value>
+  </data>
+  <data name="Statistics" xml:space="preserve">
+    <value>Statistics</value>
+  </data>
+  <data name="Statistics_Transactions" xml:space="preserve">
+    <value>Transactions</value>
+  </data>
+  <data name="Status_Loading" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="Swap" xml:space="preserve">
+    <value>Swap</value>
+  </data>
+  <data name="TeamCompetitorList_PersonList" xml:space="preserve">
+    <value>Person List</value>
+  </data>
+  <data name="TeamCompetitors" xml:space="preserve">
+    <value>Teams</value>
+  </data>
+  <data name="TeamCompetitor_Members" xml:space="preserve">
+    <value>Team Members</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>Today</value>
+  </data>
+  <data name="Total" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="Transponders" xml:space="preserve">
+    <value>Transponders</value>
+  </data>
+  <data name="Transponders_IsEmpty" xml:space="preserve">
+    <value>No transponders.</value>
+  </data>
+  <data name="Transponder_Label" xml:space="preserve">
+    <value>Label</value>
+  </data>
+  <data name="Transponder_Type" xml:space="preserve">
+    <value>Type</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Version</value>
+  </data>
+  <data name="Weather_AirPressure" xml:space="preserve">
+    <value>Air Pressure</value>
+  </data>
+  <data name="Weather_AirTemperature" xml:space="preserve">
+    <value>Temperature</value>
+  </data>
+  <data name="Weather_Humidity" xml:space="preserve">
+    <value>Humidity</value>
+  </data>
+  <data name="Weather_TrackTemperature" xml:space="preserve">
+    <value>Temperature (track)</value>
+  </data>
+  <data name="Weather_WindSpeed" xml:space="preserve">
+    <value>Wind Speed</value>
+  </data>
+</root>

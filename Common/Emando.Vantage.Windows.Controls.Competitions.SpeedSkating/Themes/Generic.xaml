@@ -1,0 +1,137 @@
+<ResourceDictionary
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        xmlns:controls="clr-namespace:Emando.Vantage.Windows.Controls;assembly=Emando.Vantage.Windows.Controls"
+        xmlns:competitions="clr-namespace:Emando.Vantage.Windows.Competitions;assembly=Emando.Vantage.Windows.Competitions"
+        xmlns:longTrack="clr-namespace:Emando.Vantage.Windows.Controls.Competitions.SpeedSkating.LongTrack">
+
+    <controls:ReferenceToVisibilityConverter x:Key="ReferenceToVisibility" />
+    <BooleanToVisibilityConverter x:Key="BooleanToVisibility" />
+
+    <Style TargetType="{x:Type longTrack:PairsRaceBall}">
+        <Style.Resources>
+            <longTrack:PairsRaceColorToBrushConverter x:Key="RaceColorToBrush" />
+            <longTrack:PairsRaceColorToBorderBrushConverter x:Key="RaceColorToBorderBrush" />
+        </Style.Resources>
+        <Setter Property="BorderThickness" Value="0.5" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="longTrack:PairsRaceBall">
+                    <Ellipse Fill="{Binding Color, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource RaceColorToBrush}}"
+                            Stroke="{Binding Color, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource RaceColorToBorderBrush}}"
+                            StrokeThickness="{TemplateBinding BorderThickness}"
+                            MinWidth="{Binding ActualHeight, RelativeSource={RelativeSource Self}}" MinHeight="{Binding ActualWidth, RelativeSource={RelativeSource Self}}" />
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type longTrack:PairsRaceBallRow}">
+        <Setter Property="ItemTemplate">
+            <Setter.Value>
+                <DataTemplate DataType="competitions:ITrackRaceViewModel">
+                    <longTrack:PairsRaceBall Color="{Binding Color}" Margin="2">
+                        <i:Interaction.Behaviors>
+                            <controls:DragSource Format="LaneQueueBall" />
+                        </i:Interaction.Behaviors>
+                    </longTrack:PairsRaceBall>
+                </DataTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type longTrack:PairsRaceBallRow}">
+                    <Border Name="Border" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"
+                            Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+                        <i:Interaction.Behaviors>
+                            <controls:DropTarget Name="{Binding Name, RelativeSource={RelativeSource TemplatedParent}}"
+                                    Target="{Binding DropTarget, RelativeSource={RelativeSource TemplatedParent}}" />
+                        </i:Interaction.Behaviors>
+                        <Grid>
+                            <Grid Visibility="{Binding IsFinish, RelativeSource={RelativeSource TemplatedParent}, Converter={StaticResource BooleanToVisibility}}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="3*" />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                                <Rectangle Grid.Column="1" HorizontalAlignment="Center" Width="2" Fill="Red" />
+                            </Grid>
+                            <Grid x:Name="Grid" IsItemsHost="True">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                    <ColumnDefinition />
+                                </Grid.ColumnDefinitions>
+                            </Grid>
+                        </Grid>
+                    </Border>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+
+    <Style TargetType="{x:Type longTrack:Icerink}">
+        <Style.Resources>
+            <Style TargetType="Path" x:Key="SkaterStyle">
+                <Setter Property="StrokeThickness" Value="0.5" />
+            </Style>
+        </Style.Resources>
+        <Setter Property="BorderBrush" Value="SteelBlue" />
+        <Setter Property="MarkLineBrush" Value="LightSteelBlue" />
+        <Setter Property="WarmupLaneBrush" Value="WhiteSmoke" />
+        <Setter Property="LineThickness" Value="0.5" />
+        <Setter Property="WhiteStyle">
+            <Setter.Value>
+                <Style TargetType="Path" BasedOn="{StaticResource SkaterStyle}">
+                    <Setter Property="Fill" Value="White" />
+                    <Setter Property="Stroke" Value="DarkGray" />
+                </Style>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="RedStyle">
+            <Setter.Value>
+                <Style TargetType="Path" BasedOn="{StaticResource SkaterStyle}">
+                    <Setter Property="Fill" Value="Red" />
+                    <Setter Property="Stroke" Value="DarkRed" />
+                </Style>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="YellowStyle">
+            <Setter.Value>
+                <Style TargetType="Path" BasedOn="{StaticResource SkaterStyle}">
+                    <Setter Property="Fill" Value="Yellow" />
+                    <Setter Property="Stroke" Value="Goldenrod" />
+                </Style>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="BlueStyle">
+            <Setter.Value>
+                <Style TargetType="Path" BasedOn="{StaticResource SkaterStyle}">
+                    <Setter Property="Fill" Value="Blue" />
+                    <Setter Property="Stroke" Value="DarkBlue" />
+                </Style>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type longTrack:Icerink}">
+                    <Viewbox>
+                        <Canvas Name="Canvas" Width="180" Height="70">
+                            <Path StrokeThickness="5" Stroke="{TemplateBinding WarmupLaneBrush}"
+                                    Data="M 35,57.5 H 145 A 22.5,22.5 0 1 0 145,12.5 H 35 A 22.5,22.5 0 1 0 35,57.5" />
+                            <Path StrokeThickness="10" Stroke="{TemplateBinding LaneBrush}"
+                                    Data="M 35,65 H 145 A 30,30 0 1 0 145,5 H 35 A 30,30 0 1 0 35,65" />
+                            <Path StrokeThickness="{TemplateBinding LineThickness}" Stroke="{TemplateBinding BorderBrush}"
+                                    Data="M 35,70 H 145 A 35,35 0 1 0 145,0 H 35 A 35,35 0 1 0 35,70" />
+                            <Path StrokeThickness="{TemplateBinding LineThickness}" Stroke="{TemplateBinding BorderBrush}"
+                                    Data="M 35,60 H 145 A 25,25 0 1 0 145,10 H 35 A 25,25 0 1 0 35,60" />
+                            <Path StrokeThickness="{TemplateBinding LineThickness}" Stroke="{TemplateBinding MarkLineBrush}"
+                                    Data="M 35,65 H 145 A 30,30 0 1 0 145,5 M 35,5 A 30,30 0 1 0 35,65" />
+                        </Canvas>
+                    </Viewbox>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

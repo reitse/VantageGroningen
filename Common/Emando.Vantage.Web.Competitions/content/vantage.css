@@ -1,0 +1,59 @@
+﻿body {
+    padding-top: 70px;
+}
+
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+td ol:last-child,
+td ul:last-child { margin-bottom: 0; }
+
+tr[ui-sref], tr[ng-click], td[ui-sref], td[ng-click] { cursor: pointer; }
+
+.table .dropdown-menu > li > a { text-decoration: none; }
+
+.label-distance { background-color: #df691a; }
+
+.label-distancecombination { background-color: #df691a; }
+
+.label-licensekey { background-color: #1ab7df; }
+
+.label-licenseflag { background-color: #df691a; }
+
+.label-category { background-color: #3498db; }
+
+.label-userrole { background-color: #df691a; }
+
+.table > tbody > tr > td { vertical-align: middle; }
+
+.table > tbody > tr > td.pairs-race-ball { font-size: 1.1em; }
+
+.pairsrace-white-ring { color: gray; }
+
+.pairsrace-white { color: white; }
+
+.pairsrace-red { color: red; }
+
+.pairsrace-yellow { color: yellow; }
+
+.pairsrace-blue { color: blue; }
+
+.btn-group-inline > .btn { padding: 1px 5px; }
+
+.btn-sm { font-size: 13px; }
+
+table > tbody > tr.pairs-divider-none > td {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+table > tbody > tr.pairs-divider-top > td {
+    padding-top: 10px;
+}
+
+table > tbody > tr.pairs-divider-bottom > td {
+    padding-bottom: 10px;
+}
+
+tfoot > tr > td {
+    font-weight: bold;
+}

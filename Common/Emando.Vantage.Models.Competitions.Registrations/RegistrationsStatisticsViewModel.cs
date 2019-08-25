@@ -1,0 +1,15 @@
+﻿namespace Emando.Vantage.Models.Competitions.Registrations
+{
+    public class RegistrationsStatisticsViewModel
+    {
+        public string Discipline { get; set; }
+
+        public string Currency { get; set; }
+
+        public decimal? Amount { get; set; }
+
+        public int ConfirmedCount { get; set; }
+
+        public int WithdrawnCount { get; set; }
+    }
+}

@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4B360B51-07D8-41E5-A2BC-BC293CBEE2BC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Emando.Vantage.Models.Competitions</RootNamespace>
+    <AssemblyName>Emando.Vantage.Models.Competitions</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalculatedLapViewModel.cs" />
+    <Compile Include="ClassifiedCompetitorViewModel.cs" />
+    <Compile Include="CompetitionSerieDetailsViewModel.cs" />
+    <Compile Include="CompetitionSerieViewModel.cs" />
+    <Compile Include="CompetitionStructureViewModel.cs" />
+    <Compile Include="CompetitionViewModel.cs" />
+    <Compile Include="CompetitorDetailsViewModel.cs" />
+    <Compile Include="CompetitorDistanceCombinationViewModel.cs" />
+    <Compile Include="CompetitorListDetailsViewModel.cs" />
+    <Compile Include="DistancePointsTableViewModel.cs" />
+    <Compile Include="DistancePointsViewModel.cs" />
+    <Compile Include="DistancesRankingPointsViewModel.cs" />
+    <Compile Include="DistanceRankingTimeViewModel.cs" />
+    <Compile Include="Events\DistanceCombinationClassificationResultChangedEventViewModel.cs" />
+    <Compile Include="Events\DistanceCombinationEventViewModelBase.cs" />
+    <Compile Include="Events\PresentedRaceLapsChangedEventViewModel.cs" />
+    <Compile Include="PersonCompetitorListDetailsViewModel.cs" />
+    <Compile Include="CompetitorListViewModel.cs" />
+    <Compile Include="CompetitorRaceViewModel.cs" />
+    <Compile Include="CompetitorViewModel.cs" />
+    <Compile Include="DistanceCombinationCompetitorsViewModel.cs" />
+    <Compile Include="DistanceCombinationCompetitorViewModel.cs" />
+    <Compile Include="DistanceCombinationDistanceViewModel.cs" />
+    <Compile Include="DistanceCombinationViewModel.cs" />
+    <Compile Include="DistanceDistanceCombinationViewModel.cs" />
+    <Compile Include="DistanceDrawSettingsViewModel.cs" />
+    <Compile Include="Events\DistanceDrawChangedEventViewModel.cs" />
+    <Compile Include="DistanceViewModel.cs" />
+    <Compile Include="DrawCompetitorViewModel.cs" />
+    <Compile Include="Events\CompetitionActivatedEventViewModel.cs" />
+    <Compile Include="Events\CompetitionAddedEventViewModel.cs" />
+    <Compile Include="Events\CompetitionChangedEventViewModel.cs" />
+    <Compile Include="Events\CompetitionDeletedEventViewModel.cs" />
+    <Compile Include="Events\CompetitionEventViewModelBase.cs" />
+    <Compile Include="Events\DistanceActivatedEventViewModel.cs" />
+    <Compile Include="Events\DistanceDeactivatedEventViewModel.cs" />
+    <Compile Include="Events\DistanceEventViewModelBase.cs" />
+    <Compile Include="Events\DistanceRacesAddedEventViewModel.cs" />
+    <Compile Include="Events\DistanceRacesChangedEventViewModel.cs" />
+    <Compile Include="Events\DistanceRacesDeletedEventViewModel.cs" />
+    <Compile Include="Events\DistanceResultChangedEventViewModel.cs" />
+    <Compile Include="Events\HeatActivatedEventViewModel.cs" />
+    <Compile Include="Events\HeatClearedEventViewModel.cs" />
+    <Compile Include="Events\HeatCommittedEventViewModel.cs" />
+    <Compile Include="Events\HeatDeactivatedEventViewModel.cs" />
+    <Compile Include="Events\HeatEventViewModelBase.cs" />
+    <Compile Include="Events\HeatLapPointsChangedEventViewModel.cs" />
+    <Compile Include="Events\HeatNextLapIndexChangedEventViewModel.cs" />
+    <Compile Include="Events\HeatStartedEventViewModel.cs" />
+    <Compile Include="Events\LastPresentedRaceLapChangedEventViewModel.cs" />
+    <Compile Include="Events\LastRaceSpeedChangedEventViewModel.cs" />
+    <Compile Include="Events\RaceEventViewModelBase.cs" />
+    <Compile Include="Events\RaceLapAddedEventViewModel.cs" />
+    <Compile Include="Events\RaceLapEventViewModelBase.cs" />
+    <Compile Include="Events\RaceLapUpdatedEventViewModel.cs" />
+    <Compile Include="Events\RaceNextLapIndexChangedEventViewModel.cs" />
+    <Compile Include="Events\RacePassingAddedEventViewModel.cs" />
+    <Compile Include="Events\RacePassingUpdatedEventViewModel.cs" />
+    <Compile Include="HeatViewModel.cs" />
+    <Compile Include="HistoricalTimeSelectorViewModel.cs" />
+    <Compile Include="HistoricalTimeViewModel.cs" />
+    <Compile Include="IEventsHubCallback.cs" />
+    <Compile Include="InstanceRaceLapsViewModel.cs" />
+    <Compile Include="LapViewModel.cs" />
+    <Compile Include="PassingViewModel.cs" />
+    <Compile Include="PersonCompetitorDetailsViewModel.cs" />
+    <Compile Include="PersonCompetitorListViewModel.cs" />
+    <Compile Include="PersonCompetitorViewModel.cs" />
+    <Compile Include="PersonLicenseTimeViewModel.cs" />
+    <Compile Include="PersonTimeViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RaceChangeViewModel.cs" />
+    <Compile Include="RaceComparandViewModel.cs" />
+    <Compile Include="RaceDetailsViewModel.cs" />
+    <Compile Include="RaceLapGroupViewModel.cs" />
+    <Compile Include="RaceLapPointsViewModel.cs" />
+    <Compile Include="RaceLapViewModel.cs" />
+    <Compile Include="RacePassingViewModel.cs" />
+    <Compile Include="RaceResultViewModel.cs" />
+    <Compile Include="RaceStartViewModel.cs" />
+    <Compile Include="RaceStateViewModel.cs" />
+    <Compile Include="RaceTimeViewModel.cs" />
+    <Compile Include="RaceTransponderViewModel.cs" />
+    <Compile Include="RaceViewModel.cs" />
+    <Compile Include="RankedPersonPointsViewModel.cs" />
+    <Compile Include="RankedPersonTimeViewModel.cs" />
+    <Compile Include="RankedRaceViewModel.cs" />
+    <Compile Include="RankingViewModelBase.cs" />
+    <Compile Include="RecordTimeViewModel.cs" />
+    <Compile Include="RefreshClassificationMessageViewModel.cs" />
+    <Compile Include="RefreshDistanceDrawMessageViewModel.cs" />
+    <Compile Include="RefreshDistanceResultMessageViewModel.cs" />
+    <Compile Include="RefreshHeatLapPointsMessageViewModel.cs" />
+    <Compile Include="TeamCompetitorDetailsViewModel.cs" />
+    <Compile Include="TeamCompetitorListDetailsViewModel.cs" />
+    <Compile Include="TeamCompetitorListViewModel.cs" />
+    <Compile Include="TeamCompetitorMemberViewModel.cs" />
+    <Compile Include="TeamCompetitorViewModel.cs" />
+    <Compile Include="TransponderViewModel.cs" />
+    <Compile Include="ValidDistanceViewModel.cs" />
+    <Compile Include="WeatherViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Emando.Vantage.Competitions\Emando.Vantage.Competitions.csproj">
+      <Project>{a7881150-ca7d-4327-a507-d78abbcd703a}</Project>
+      <Name>Emando.Vantage.Competitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Models\Emando.Vantage.Models.csproj">
+      <Project>{8BCAD4ED-BC80-4270-AA08-69E6DB9D5DEB}</Project>
+      <Name>Emando.Vantage.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage\Emando.Vantage.csproj">
+      <Project>{a52704c2-860c-4030-a49f-aed05096653d}</Project>
+      <Name>Emando.Vantage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

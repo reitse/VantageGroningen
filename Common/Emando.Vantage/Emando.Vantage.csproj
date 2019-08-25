@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{A52704C2-860C-4030-A49F-AED05096653D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Emando.Vantage</RootNamespace>
+    <AssemblyName>Emando.Vantage</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Address.cs" />
+    <Compile Include="ClubKey.cs" />
+    <Compile Include="CompetitionClasses.cs" />
+    <Compile Include="CompetitionClassLocation.cs" />
+    <Compile Include="CompetitionRight.cs" />
+    <Compile Include="Contact.cs" />
+    <Compile Include="EventSource.cs" />
+    <Compile Include="Events\EventBase.cs" />
+    <Compile Include="Events\HeartbeatEvent.cs" />
+    <Compile Include="Events\InstanceSwitchedEvent.cs" />
+    <Compile Include="Events\RecoverBeginEvent.cs" />
+    <Compile Include="Events\RecoverEndEvent.cs" />
+    <Compile Include="Gender.cs" />
+    <Compile Include="IAddress.cs" />
+    <Compile Include="IClub.cs" />
+    <Compile Include="ICompetitionRight.cs" />
+    <Compile Include="IHaveTransponders.cs" />
+    <Compile Include="IPayment.cs" />
+    <Compile Include="IPerson.cs" />
+    <Compile Include="IPersonCategory.cs" />
+    <Compile Include="IPersonLicense.cs" />
+    <Compile Include="ITransponderKey.cs" />
+    <Compile Include="ITransponderScan.cs" />
+    <Compile Include="ITransponderScanner.cs" />
+    <Compile Include="IUserSetting.cs" />
+    <Compile Include="IVenue.cs" />
+    <Compile Include="IVenueSegment.cs" />
+    <Compile Include="IVenueTrack.cs" />
+    <Compile Include="Name.cs" />
+    <Compile Include="PaymentStatus.cs" />
+    <Compile Include="PersonCategoryFlags.cs" />
+    <Compile Include="PersonLicenseExpertise.cs" />
+    <Compile Include="PersonLicenseFlags.cs" />
+    <Compile Include="PresentationSource.cs" />
+    <Compile Include="EnumerableStructExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TransponderKey.cs" />
+    <Compile Include="VantageFeatures.cs" />
+    <Compile Include="VantageRoles.cs" />
+    <Compile Include="VenueDistrictLevels.cs" />
+    <Compile Include="VenueSegmentFlags.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

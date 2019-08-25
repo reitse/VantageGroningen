@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8BCAD4ED-BC80-4270-AA08-69E6DB9D5DEB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Emando.Vantage.Models</RootNamespace>
+    <AssemblyName>Emando.Vantage.Models</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdapterViewModel.cs" />
+    <Compile Include="AddressViewModel.cs" />
+    <Compile Include="ClubViewModel.cs" />
+    <Compile Include="ContactViewModel.cs" />
+    <Compile Include="Events\EventViewModelBase.cs" />
+    <Compile Include="Events\HeartbeatEventViewModel.cs" />
+    <Compile Include="Events\IEventViewModel.cs" />
+    <Compile Include="Events\ILicenseIssuerEventViewModel.cs" />
+    <Compile Include="Events\InstanceSwitchedEventViewModel.cs" />
+    <Compile Include="Events\PersonLicenseChangedEventViewModel.cs" />
+    <Compile Include="Events\RecoverBeginEventViewModel.cs" />
+    <Compile Include="Events\RecoverEndEventViewModel.cs" />
+    <Compile Include="HandshakeBindingModel.cs" />
+    <Compile Include="LicenseIssuerViewModel.cs" />
+    <Compile Include="MessageViewModelBase.cs" />
+    <Compile Include="NameViewModel.cs" />
+    <Compile Include="PersonCategoryViewModel.cs" />
+    <Compile Include="PersonDetailsViewModel.cs" />
+    <Compile Include="PersonLicenseDetailsViewModel.cs" />
+    <Compile Include="PersonLicensePriceViewModel.cs" />
+    <Compile Include="PersonLicenseRestrictedDetailsViewModel.cs" />
+    <Compile Include="PersonLicenseSummaryViewModel.cs" />
+    <Compile Include="PersonLicenseVenueClassViewModel.cs" />
+    <Compile Include="PersonLicenseVenueSubscriptionViewModel.cs" />
+    <Compile Include="PersonLicenseViewModel.cs" />
+    <Compile Include="PersonRestrictedDetailsViewModel.cs" />
+    <Compile Include="PersonViewModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RefreshRaceLapsMessageViewModel.cs" />
+    <Compile Include="ReportTemplateViewModel.cs" />
+    <Compile Include="RestrictedAddressViewModel.cs" />
+    <Compile Include="RestrictedPersonViewModel.cs" />
+    <Compile Include="TransponderBagViewModel.cs" />
+    <Compile Include="TransponderSetTransponderViewModel.cs" />
+    <Compile Include="TransponderSetViewModel.cs" />
+    <Compile Include="TransponderViewModel.cs" />
+    <Compile Include="UserSettingViewModel.cs" />
+    <Compile Include="Users\VantageUserCompetitionRightViewModel.cs" />
+    <Compile Include="Users\VantageUserDetailsViewModel.cs" />
+    <Compile Include="Users\VantageUserViewModel.cs" />
+    <Compile Include="VenueDetailsViewModel.cs" />
+    <Compile Include="VenueDistrictViewModel.cs" />
+    <Compile Include="VenueTrackViewModel.cs" />
+    <Compile Include="VenueViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Emando.Vantage\Emando.Vantage.csproj">
+      <Project>{a52704c2-860c-4030-a49f-aed05096653d}</Project>
+      <Name>Emando.Vantage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

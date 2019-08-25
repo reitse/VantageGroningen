@@ -1,0 +1,30 @@
+//use InteropSignatureToolkit to import C Signatures
+
+sigimp /genCode:yes /lang:cs /out:MylapsSDKLibrary.cs /lib:MylapsSDK.dll /includePath:../../../../include/ /nologo ../../../../include/MylapsSDK.h
+
+fix parser error from line [92 - 181]: "cannot implicity convert type string to int"
+
+//find and replace in MylapsSDKLibrary.cs
+
+public static extern bool mta_{[a-zA-Z]*}_get_userdata\({.*}, {System.IntPtr dst}, uint dstlen\);
+public static extern bool mta_\1_get_userdata(\2, System.Text.StringBuilder dst, uint dstlen);
+
+f	{[a-zA-Z]}_<1 whitespace>
+r	\1<1 whitespace>
+
+f	DllImportAttribute\("\<Unknown\>",
+r	DllImportAttribute("MylapsSDK.dll",
+
+f	public delegate void pfNotify{.*}, ref System.IntPtr {.*}array,{.*}$
+r	public delegate void pfNotify\1, System.IntPtr \2array,\3
+
+f	/// uint8_t->unsigned int
+r	/// uint8_t->byte
+(Also change the data type from uint to byte)
+
+f	/// uint8_t[
+r	/// byte[
+(Also change the data type from uint to bytearray and change "ArraySubType=System.Runtime.InteropServices.UnmanagedType.U4"
+to "ArraySubType=System.Runtime.InteropServices.UnmanagedType.U1" for the same datamember by hand...)
+
+put everything in a namespace "namespace MyLapsSDKLibrary"

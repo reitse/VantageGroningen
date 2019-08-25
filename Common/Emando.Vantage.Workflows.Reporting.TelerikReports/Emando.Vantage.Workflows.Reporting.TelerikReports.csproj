@@ -1,0 +1,104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3CC9B564-D845-407F-BA6F-A2A2F4C12E5D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Emando.Vantage.Workflows.Reporting.TelerikReports</RootNamespace>
+    <AssemblyName>Emando.Vantage.Workflows.Reporting.TelerikReports</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Reporting, Version=11.2.17.1025, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="TelerikLoadedReport.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Emando.Vantage.Competitions\Emando.Vantage.Competitions.csproj">
+      <Project>{A7881150-CA7D-4327-A507-D78ABBCD703A}</Project>
+      <Name>Emando.Vantage.Competitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Workflows.Reporting\Emando.Vantage.Workflows.Reporting.csproj">
+      <Project>{2D1575C0-86D7-4F92-9FC0-40D6A4DD668A}</Project>
+      <Name>Emando.Vantage.Workflows.Reporting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Entities.Competitions\Emando.Vantage.Entities.Competitions.csproj">
+      <Project>{9DF95995-ABC6-4608-BCA6-13F813323F79}</Project>
+      <Name>Emando.Vantage.Entities.Competitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Entities\Emando.Vantage.Entities.csproj">
+      <Project>{C33E80D2-AC14-478D-9353-21035D6D56DB}</Project>
+      <Name>Emando.Vantage.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage\Emando.Vantage.csproj">
+      <Project>{A52704C2-860C-4030-A49F-AED05096653D}</Project>
+      <Name>Emando.Vantage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Competitions\Emando.Vantage.Competitions.csproj">
+      <Name>Emando.Vantage.Competitions</Name>
+      <Project>{A7881150-CA7D-4327-A507-D78ABBCD703A}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Workflows.Reporting\Emando.Vantage.Workflows.Reporting.csproj">
+      <Name>Emando.Vantage.Workflows.Reporting</Name>
+      <Project>{2D1575C0-86D7-4F92-9FC0-40D6A4DD668A}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Entities.Competitions\Emando.Vantage.Entities.Competitions.csproj">
+      <Name>Emando.Vantage.Entities.Competitions</Name>
+      <Project>{9DF95995-ABC6-4608-BCA6-13F813323F79}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Entities\Emando.Vantage.Entities.csproj">
+      <Name>Emando.Vantage.Entities</Name>
+      <Project>{C33E80D2-AC14-478D-9353-21035D6D56DB}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage\Emando.Vantage.csproj">
+      <Name>Emando.Vantage</Name>
+      <Project>{A52704C2-860C-4030-A49F-AED05096653D}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

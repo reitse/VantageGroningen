@@ -1,0 +1,368 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3D27167C-5B52-4FC1-9AD6-E65205B10821}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Emando.Vantage.Components.Competitions</RootNamespace>
+    <AssemblyName>Emando.Vantage.Components.Competitions.DbContext</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Common.Logging.3.3.1\lib\net40\Common.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Common.Logging.Core.3.3.1\lib\net40\Common.Logging.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompetitionContext.cs" />
+    <Compile Include="Migrations\201510292054222_Noop4.cs" />
+    <Compile Include="Migrations\201510292054222_Noop4.Designer.cs">
+      <DependentUpon>201510292054222_Noop4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510301125028_RaceTransponderSet.cs" />
+    <Compile Include="Migrations\201510301125028_RaceTransponderSet.Designer.cs">
+      <DependentUpon>201510301125028_RaceTransponderSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510311117094_CompetitorVenueCode.cs" />
+    <Compile Include="Migrations\201510311117094_CompetitorVenueCode.Designer.cs">
+      <DependentUpon>201510311117094_CompetitorVenueCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511011135092_PersonTimesIndex.cs" />
+    <Compile Include="Migrations\201511011135092_PersonTimesIndex.Designer.cs">
+      <DependentUpon>201511011135092_PersonTimesIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201511131306474_RaceTransponderSet1.cs" />
+    <Compile Include="Migrations\201511131306474_RaceTransponderSet1.Designer.cs">
+      <DependentUpon>201511131306474_RaceTransponderSet1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512011855523_Noop5.cs" />
+    <Compile Include="Migrations\201512011855523_Noop5.Designer.cs">
+      <DependentUpon>201512011855523_Noop5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512011935002_CompetitorLicenseFlags.cs" />
+    <Compile Include="Migrations\201512011935002_CompetitorLicenseFlags.Designer.cs">
+      <DependentUpon>201512011935002_CompetitorLicenseFlags.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512072352269_Noop6.cs" />
+    <Compile Include="Migrations\201512072352269_Noop6.Designer.cs">
+      <DependentUpon>201512072352269_Noop6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512271117220_ReportTemplates.cs" />
+    <Compile Include="Migrations\201512271117220_ReportTemplates.Designer.cs">
+      <DependentUpon>201512271117220_ReportTemplates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512271455475_DistanceStarterReferee.cs" />
+    <Compile Include="Migrations\201512271455475_DistanceStarterReferee.Designer.cs">
+      <DependentUpon>201512271455475_DistanceStarterReferee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512271628140_CompetitionTimeZone.cs" />
+    <Compile Include="Migrations\201512271628140_CompetitionTimeZone.Designer.cs">
+      <DependentUpon>201512271628140_CompetitionTimeZone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512271816026_DefaultLastRaceCommitted.cs" />
+    <Compile Include="Migrations\201512271816026_DefaultLastRaceCommitted.Designer.cs">
+      <DependentUpon>201512271816026_DefaultLastRaceCommitted.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201601050833438_PersonTimeSource.cs" />
+    <Compile Include="Migrations\201601050833438_PersonTimeSource.Designer.cs">
+      <DependentUpon>201601050833438_PersonTimeSource.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201601061107531_CompetitionMadeOfficial.cs" />
+    <Compile Include="Migrations\201601061107531_CompetitionMadeOfficial.Designer.cs">
+      <DependentUpon>201601061107531_CompetitionMadeOfficial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201601071138141_DistanceVenue.cs" />
+    <Compile Include="Migrations\201601071138141_DistanceVenue.Designer.cs">
+      <DependentUpon>201601071138141_DistanceVenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201601111624130_CompetitionProviderKey.cs" />
+    <Compile Include="Migrations\201601111624130_CompetitionProviderKey.Designer.cs">
+      <DependentUpon>201601111624130_CompetitionProviderKey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201601141343377_Noop7.cs" />
+    <Compile Include="Migrations\201601141343377_Noop7.Designer.cs">
+      <DependentUpon>201601141343377_Noop7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201609052117431_DistanceDrawDeleteExistingSetting.cs" />
+    <Compile Include="Migrations\201609052117431_DistanceDrawDeleteExistingSetting.Designer.cs">
+      <DependentUpon>201609052117431_DistanceDrawDeleteExistingSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610272003044_Noop8.cs" />
+    <Compile Include="Migrations\201610272003044_Noop8.Designer.cs">
+      <DependentUpon>201610272003044_Noop8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610281434395_DistanceDrawGroupMode.cs" />
+    <Compile Include="Migrations\201610281434395_DistanceDrawGroupMode.Designer.cs">
+      <DependentUpon>201610281434395_DistanceDrawGroupMode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701061640135_RecordTimes.cs" />
+    <Compile Include="Migrations\201701061640135_RecordTimes.Designer.cs">
+      <DependentUpon>201701061640135_RecordTimes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201701130848408_RecordTimeGender.cs" />
+    <Compile Include="Migrations\201701130848408_RecordTimeGender.Designer.cs">
+      <DependentUpon>201701130848408_RecordTimeGender.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710271523106_LongCategoryFilter.cs" />
+    <Compile Include="Migrations\201710271523106_LongCategoryFilter.Designer.cs">
+      <DependentUpon>201710271523106_LongCategoryFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710291757397_PersonLicenseLegNumber.cs" />
+    <Compile Include="Migrations\201710291757397_PersonLicenseLegNumber.Designer.cs">
+      <DependentUpon>201710291757397_PersonLicenseLegNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201711111630237_CompetitorLegNumber.cs" />
+    <Compile Include="Migrations\201711111630237_CompetitorLegNumber.Designer.cs">
+      <DependentUpon>201711111630237_CompetitorLegNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlPersonTimeSource.cs" />
+    <Compile Include="SqlPersonTimeTarget.cs" />
+    <Compile Include="ICompetitionContext.cs" />
+    <Compile Include="Migrations\201506100959244_InitialCreate.cs" />
+    <Compile Include="Migrations\201506100959244_InitialCreate.Designer.cs">
+      <DependentUpon>201506100959244_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201508141321423_Clubs.cs" />
+    <Compile Include="Migrations\201508141321423_Clubs.Designer.cs">
+      <DependentUpon>201508141321423_Clubs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201508182100001_DistanceCombinationClassification.cs" />
+    <Compile Include="Migrations\201508182100001_DistanceCombinationClassification.Designer.cs">
+      <DependentUpon>201508182100001_DistanceCombinationClassification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509091237280_ClassFilter.cs" />
+    <Compile Include="Migrations\201509091237280_ClassFilter.Designer.cs">
+      <DependentUpon>201509091237280_ClassFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509171740111_Noop1.cs" />
+    <Compile Include="Migrations\201509171740111_Noop1.Designer.cs">
+      <DependentUpon>201509171740111_Noop1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510042150044_Noop2.cs" />
+    <Compile Include="Migrations\201510042150044_Noop2.Designer.cs">
+      <DependentUpon>201510042150044_Noop2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510051851366_OptimizedReferences1.cs" />
+    <Compile Include="Migrations\201510051851366_OptimizedReferences1.Designer.cs">
+      <DependentUpon>201510051851366_OptimizedReferences1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510061649270_Noop3.cs" />
+    <Compile Include="Migrations\201510061649270_Noop3.Designer.cs">
+      <DependentUpon>201510061649270_Noop3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510121558025_PersonTimePerLicense.cs" />
+    <Compile Include="Migrations\201510121558025_PersonTimePerLicense.Designer.cs">
+      <DependentUpon>201510121558025_PersonTimePerLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510191412482_PersonTimeNationalityCode.cs" />
+    <Compile Include="Migrations\201510191412482_PersonTimeNationalityCode.Designer.cs">
+      <DependentUpon>201510191412482_PersonTimeNationalityCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlRecordTimeSource.cs" />
+    <Compile Include="SqlRecordTimeTarget.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Emando.Vantage.Competitions\Emando.Vantage.Competitions.csproj">
+      <Project>{A7881150-CA7D-4327-A507-D78ABBCD703A}</Project>
+      <Name>Emando.Vantage.Competitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Components.Competitions\Emando.Vantage.Components.Competitions.csproj">
+      <Project>{D4FB02B1-2805-4CD8-8602-9B063DB7C091}</Project>
+      <Name>Emando.Vantage.Components.Competitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Components.Sync\Emando.Vantage.Components.Sync.csproj">
+      <Project>{e043b1dc-d6ce-4c13-a2b1-1f43ae634ed5}</Project>
+      <Name>Emando.Vantage.Components.Sync</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Components\Emando.Vantage.Components.csproj">
+      <Project>{76D66F3E-A86F-4B2A-ABCE-29BE9C5939BE}</Project>
+      <Name>Emando.Vantage.Components</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage\Emando.Vantage.csproj">
+      <Project>{A52704C2-860C-4030-A49F-AED05096653D}</Project>
+      <Name>Emando.Vantage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Components.DbContext\Emando.Vantage.Components.DbContext.csproj">
+      <Project>{FAC252E0-A7B9-4C4B-8738-9A342027FA33}</Project>
+      <Name>Emando.Vantage.Components.DbContext</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Entities.Competitions\Emando.Vantage.Entities.Competitions.csproj">
+      <Project>{9DF95995-ABC6-4608-BCA6-13F813323F79}</Project>
+      <Name>Emando.Vantage.Entities.Competitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Entities\Emando.Vantage.Entities.csproj">
+      <Project>{C33E80D2-AC14-478D-9353-21035D6D56DB}</Project>
+      <Name>Emando.Vantage.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201506100959244_InitialCreate.resx">
+      <DependentUpon>201506100959244_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508141321423_Clubs.resx">
+      <DependentUpon>201508141321423_Clubs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508182100001_DistanceCombinationClassification.resx">
+      <DependentUpon>201508182100001_DistanceCombinationClassification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509091237280_ClassFilter.resx">
+      <DependentUpon>201509091237280_ClassFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509171740111_Noop1.resx">
+      <DependentUpon>201509171740111_Noop1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510042150044_Noop2.resx">
+      <DependentUpon>201510042150044_Noop2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510051851366_OptimizedReferences1.resx">
+      <DependentUpon>201510051851366_OptimizedReferences1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510061649270_Noop3.resx">
+      <DependentUpon>201510061649270_Noop3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510121558025_PersonTimePerLicense.resx">
+      <DependentUpon>201510121558025_PersonTimePerLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510191412482_PersonTimeNationalityCode.resx">
+      <DependentUpon>201510191412482_PersonTimeNationalityCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510292054222_Noop4.resx">
+      <DependentUpon>201510292054222_Noop4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510301125028_RaceTransponderSet.resx">
+      <DependentUpon>201510301125028_RaceTransponderSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510311117094_CompetitorVenueCode.resx">
+      <DependentUpon>201510311117094_CompetitorVenueCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511011135092_PersonTimesIndex.resx">
+      <DependentUpon>201511011135092_PersonTimesIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201511131306474_RaceTransponderSet1.resx">
+      <DependentUpon>201511131306474_RaceTransponderSet1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512011855523_Noop5.resx">
+      <DependentUpon>201512011855523_Noop5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512011935002_CompetitorLicenseFlags.resx">
+      <DependentUpon>201512011935002_CompetitorLicenseFlags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512072352269_Noop6.resx">
+      <DependentUpon>201512072352269_Noop6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512271117220_ReportTemplates.resx">
+      <DependentUpon>201512271117220_ReportTemplates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512271455475_DistanceStarterReferee.resx">
+      <DependentUpon>201512271455475_DistanceStarterReferee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512271628140_CompetitionTimeZone.resx">
+      <DependentUpon>201512271628140_CompetitionTimeZone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512271816026_DefaultLastRaceCommitted.resx">
+      <DependentUpon>201512271816026_DefaultLastRaceCommitted.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601050833438_PersonTimeSource.resx">
+      <DependentUpon>201601050833438_PersonTimeSource.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601061107531_CompetitionMadeOfficial.resx">
+      <DependentUpon>201601061107531_CompetitionMadeOfficial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601071138141_DistanceVenue.resx">
+      <DependentUpon>201601071138141_DistanceVenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601111624130_CompetitionProviderKey.resx">
+      <DependentUpon>201601111624130_CompetitionProviderKey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601141343377_Noop7.resx">
+      <DependentUpon>201601141343377_Noop7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201609052117431_DistanceDrawDeleteExistingSetting.resx">
+      <DependentUpon>201609052117431_DistanceDrawDeleteExistingSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610272003044_Noop8.resx">
+      <DependentUpon>201610272003044_Noop8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610281434395_DistanceDrawGroupMode.resx">
+      <DependentUpon>201610281434395_DistanceDrawGroupMode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701061640135_RecordTimes.resx">
+      <DependentUpon>201701061640135_RecordTimes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201701130848408_RecordTimeGender.resx">
+      <DependentUpon>201701130848408_RecordTimeGender.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710271523106_LongCategoryFilter.resx">
+      <DependentUpon>201710271523106_LongCategoryFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710291757397_PersonLicenseLegNumber.resx">
+      <DependentUpon>201710291757397_PersonLicenseLegNumber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201711111630237_CompetitorLegNumber.resx">
+      <DependentUpon>201711111630237_CompetitorLegNumber.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

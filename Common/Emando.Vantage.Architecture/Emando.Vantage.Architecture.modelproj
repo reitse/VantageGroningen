@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{e2bbb39e-1e0f-4c16-a97b-fd429c3862d4}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>Emando.Vantage.Architecture</Name>
+    <RootNamespace>Sports.Architecture</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccProvider>SAK</SccProvider>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <ValidateArchitecture>true</ValidateArchitecture>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+  <ItemGroup>
+    <Content Include="Handle hardware event.activitydiagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Handle hardware event.activitydiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Handle hardware event.activitydiagram</DependentUpon>
+    </Content>
+    <Content Include="Handle hardware events.sequencediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Handle hardware events.sequencediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Handle hardware events.sequencediagram</DependentUpon>
+    </Content>
+    <Content Include="ModelDefinition\Package_2005.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Speed Skating\Competition Management.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Speed Skating\Competition Management.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Speed Skating\Competition Management.usecasediagram</DependentUpon>
+    </Content>
+    <Content Include="Speed Skating\Timekeeping.usecasediagram">
+      <SubType>Content</SubType>
+    </Content>
+    <Content Include="Speed Skating\Timekeeping.usecasediagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Speed Skating\Timekeeping.usecasediagram</DependentUpon>
+    </Content>
+    <Folder Include="ModelDefinition\" />
+    <Content Include="ModelDefinition\Sports.Architecture.uml">
+      <SubType>Content</SubType>
+    </Content>
+    <Folder Include="Speed Skating" />
+  </ItemGroup>
+  <ItemGroup>
+    <Validate Include="Layers.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="Layers.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>Layers.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="Layers.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>Layers.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Emando.Vantage.Components\Emando.Vantage.Components.csproj">
+      <Name>Emando.Vantage.Components</Name>
+      <Project>{76d66f3e-a86f-4b2a-abce-29be9c5939be}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Data\Emando.Vantage.Data.csproj">
+      <Name>Emando.Vantage.Data</Name>
+      <Project>{c0605077-2248-4c04-af2c-4db6bfb3e3d4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Entities\Emando.Vantage.Entities.csproj">
+      <Name>Emando.Vantage.Entities</Name>
+      <Project>{c33e80d2-ac14-478d-9353-21035d6d56db}</Project>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

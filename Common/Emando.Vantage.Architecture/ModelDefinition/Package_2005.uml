@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm9="http://schemas.microsoft.com/dsltools/UseCaseModel"
+  dslVersion="1.0.0.0"
+  Id="ed67b455-8972-4c7d-889b-88b6681b0145"
+  name="Speed Skating" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <packagedElements>
+    <packageHasNamedElement>
+      <useCase
+        Id="56c962eb-546b-40df-8f6c-365a34dd9d4a"
+        name="Create distance"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="5c486125-6d52-4b5a-804b-f743cd7d6213">
+            <useCaseMoniker
+              Id="db9e3bba-9322-4bc0-8e83-e739d29c1244"
+              LastKnownName="Edit distance"
+              LastKnownLocation="Package_2005.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="0d808033-2108-4d66-8112-4ec3fec05a65"
+            LastKnownName="Competition Management"
+            LastKnownLocation="Sports.Architecture.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="db9e3bba-9322-4bc0-8e83-e739d29c1244"
+        name="Edit distance"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="97e03684-0c0f-4a00-aabd-948334e71d91">
+            <useCaseMoniker
+              Id="6fb9511d-35ba-4b20-901a-cca67b68d741"
+              LastKnownName="Draw distance"
+              LastKnownLocation="Package_2005.uml" />
+          </include>
+          <include
+            Id="fa3c7733-b6a7-4cd2-8960-ab72214f4891">
+            <useCaseMoniker
+              Id="bbbddaad-f2f0-485b-b361-2aa9b45f8814"
+              LastKnownName="Assign transponders"
+              LastKnownLocation="Package_2005.uml" />
+          </include>
+          <include
+            Id="ca49ad56-b9bd-437f-b51a-8b2e6445bea8">
+            <useCaseMoniker
+              Id="03c788f8-2600-425d-9237-8fc708d005f6"
+              LastKnownName="Edit race"
+              LastKnownLocation="Package_2005.uml" />
+          </include>
+          <include
+            Id="2ead1b0b-9993-4f59-8772-a06fbfb39a35">
+            <useCaseMoniker
+              Id="30b0ccc3-aac7-4784-a895-c4b450f3c06b"
+              LastKnownName="Add race"
+              LastKnownLocation="Package_2005.uml" />
+          </include>
+          <include
+            Id="48d34114-9c89-4623-a31e-c0e24f70a7e6">
+            <useCaseMoniker
+              Id="adee7662-c8eb-46f2-8e70-747188e22535"
+              LastKnownName="Delete race"
+              LastKnownLocation="Package_2005.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="0d808033-2108-4d66-8112-4ec3fec05a65"
+            LastKnownName="Competition Management"
+            LastKnownLocation="Sports.Architecture.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6b1eb66d-3e25-43e0-af6a-fe18605f74b5"
+        name="List distances"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="0d808033-2108-4d66-8112-4ec3fec05a65"
+            LastKnownName="Competition Management"
+            LastKnownLocation="Sports.Architecture.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6fb9511d-35ba-4b20-901a-cca67b68d741"
+        name="Draw distance"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="0d808033-2108-4d66-8112-4ec3fec05a65"
+            LastKnownName="Competition Management"
+            LastKnownLocation="Sports.Architecture.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="bbbddaad-f2f0-485b-b361-2aa9b45f8814"
+        name="Assign transponders"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="0d808033-2108-4d66-8112-4ec3fec05a65"
+            LastKnownName="Competition Management"
+            LastKnownLocation="Sports.Architecture.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="03c788f8-2600-425d-9237-8fc708d005f6"
+        name="Edit race"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="1eac8549-a42e-46e5-a17a-cdfae4952360">
+            <useCaseMoniker
+              Id="3b71eba9-f89e-498e-b85a-854a818997c5"
+              LastKnownName="Edit laps"
+              LastKnownLocation="Package_2005.uml" />
+          </include>
+          <include
+            Id="b578cafb-b448-40a2-a8f9-735e5472c0a5">
+            <useCaseMoniker
+              Id="7ab782a7-316f-4ee6-b236-e1fa5c4b495b"
+              LastKnownName="Edit competitors"
+              LastKnownLocation="Sports.Architecture.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="0d808033-2108-4d66-8112-4ec3fec05a65"
+            LastKnownName="Competition Management"
+            LastKnownLocation="Sports.Architecture.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="30b0ccc3-aac7-4784-a895-c4b450f3c06b"
+        name="Add race"
+        isAbstract="false"
+        isLeaf="false">
+        <extendedCases>
+          <extend
+            Id="4025a5f5-e8de-42d2-accd-9f44e4b4d81c">
+            <useCaseMoniker
+              Id="03c788f8-2600-425d-9237-8fc708d005f6"
+              LastKnownName="Edit race"
+              LastKnownLocation="Package_2005.uml" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker
+            Id="0d808033-2108-4d66-8112-4ec3fec05a65"
+            LastKnownName="Competition Management"
+            LastKnownLocation="Sports.Architecture.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3b71eba9-f89e-498e-b85a-854a818997c5"
+        name="Edit laps"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="0d808033-2108-4d66-8112-4ec3fec05a65"
+            LastKnownName="Competition Management"
+            LastKnownLocation="Sports.Architecture.uml" />
+          <subsystemMoniker
+            Id="8a1bb45f-7d95-4358-b54a-7907f7561f26"
+            LastKnownName="Timekeeping"
+            LastKnownLocation="Sports.Architecture.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="adee7662-c8eb-46f2-8e70-747188e22535"
+        name="Delete race"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="0d808033-2108-4d66-8112-4ec3fec05a65"
+            LastKnownName="Competition Management"
+            LastKnownLocation="Sports.Architecture.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3c105abb-d510-45bc-b981-d483daffe9b8"
+        name="Generate report"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="0d808033-2108-4d66-8112-4ec3fec05a65"
+            LastKnownName="Competition Management"
+            LastKnownLocation="Sports.Architecture.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b102e024-e306-4c27-8c56-f27ead222f0b"
+        name="View race"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="0d808033-2108-4d66-8112-4ec3fec05a65"
+            LastKnownName="Competition Management"
+            LastKnownLocation="Sports.Architecture.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="cf7aaae6-f1cb-419a-83e4-4320891857bc"
+        name="View distance"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="1a2d34b9-739c-4089-8b4d-f927bf673096">
+            <useCaseMoniker
+              Id="b102e024-e306-4c27-8c56-f27ead222f0b"
+              LastKnownName="View race"
+              LastKnownLocation="Package_2005.uml" />
+          </include>
+          <include
+            Id="8667a4a3-7d39-4727-88b1-d72aa57b5a0b">
+            <useCaseMoniker
+              Id="3c105abb-d510-45bc-b981-d483daffe9b8"
+              LastKnownName="Generate report"
+              LastKnownLocation="Package_2005.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="0d808033-2108-4d66-8112-4ec3fec05a65"
+            LastKnownName="Competition Management"
+            LastKnownLocation="Sports.Architecture.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="b4be5925-3c20-46d3-aeb3-bdd84677add5"
+        name="Activate race"
+        isAbstract="false"
+        isLeaf="false">
+        <additions>
+          <include
+            Id="42f80d02-9650-43b4-b64a-a5a86a6310a6">
+            <useCaseMoniker
+              Id="e575cad2-1eb3-40a4-9b1d-f5ba8cec4901"
+              LastKnownName="Start race transaction"
+              LastKnownLocation="Package_2005.uml" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker
+            Id="8a1bb45f-7d95-4358-b54a-7907f7561f26"
+            LastKnownName="Timekeeping"
+            LastKnownLocation="Sports.Architecture.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="5c1aacc0-96a6-43f0-b9e0-2dafae259ae9"
+        name="Override passing order"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="8a1bb45f-7d95-4358-b54a-7907f7561f26"
+            LastKnownName="Timekeeping"
+            LastKnownLocation="Sports.Architecture.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="e575cad2-1eb3-40a4-9b1d-f5ba8cec4901"
+        name="Start race transaction"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="8a1bb45f-7d95-4358-b54a-7907f7561f26"
+            LastKnownName="Timekeeping"
+            LastKnownLocation="Sports.Architecture.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="6bcc5fa1-12d8-433f-a390-93f05f6adc54"
+        name="Commit race transaction"
+        isAbstract="false"
+        isLeaf="false">
+        <subjects>
+          <subsystemMoniker
+            Id="8a1bb45f-7d95-4358-b54a-7907f7561f26"
+            LastKnownName="Timekeeping"
+            LastKnownLocation="Sports.Architecture.uml" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

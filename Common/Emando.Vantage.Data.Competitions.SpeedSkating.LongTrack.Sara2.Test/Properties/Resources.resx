@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AFile" xml:space="preserve">
+    <value>#----- Pair I Snr LongName                  Code    Cat
+#SN Pas DID  Trans-L1  Trans-R1  Trans-L2  Trans-R2  Trans-L3  Trans-R3  Trans-L4  Trans-R4
+#------------------------------------------------------------------------------------------
+#-PAIR: 001 I 011 Susanna Potka             FIN     DSA 
+##      016  102064350 101969251
+011 001 003  CZ-01054  CX-05955
+#-----: 001 O 000                                       
+## 
+000 001 003
+#-PAIR: 002 I 030 Daniela Oltean            ROU     DSA 
+##      014  105407417 111863259
+030 001 003  HG-44121  PN-99963
+#-----: 002 O 035 Claudia Wallin            SWE     DN2 
+##      003  103630543 113738689
+035 001 003  FZ-67247  RT-75393
+#-PAIR: 003 I 037 Yelena Myagkikh           UKR     DSA 
+##      006  113741114 103343280
+037 001 003  RT-77818  FV-79984
+#-----: 003 O 036 Paulina Wallin            SWE     DSA 
+##      015  105413847 112772470
+036 001 003  HG-50551  RF-09174
+#-PAIR: 004 I 001 Anna Badayeva             BLR     DN1 
+##      012  104929589 107162081
+001 001 003  GW-66293  KK-98785
+#-----: 004 O 021 Natalya Rybakova          KAZ     DSA 
+##      001  105759963 108428746
+021 001 003  HL-96667  LG-65450
+#-PAIR: 005 I 038 Lana Gehring              USA     DB2 
+##      020  114027601 102055238
+038 001 003  RX-64305  CX-91942
+#-----: 005 O 003 Tamara Oudenaarden        CAN     DN1 
+##      019  112631513 110051604
+003 001 003  PZ-68217  NH-88308
+#-PAIR: 006 I 040 Heather Richardson        USA     DA2 
+##      002  102284593 107257921
+040 001 003  FF-21297  KL-94625
+#-----: 006 O 032 Yekaterina Lukoyanova     RUS     DSA 
+##      007  116438404 106928935
+032 001 003  TP-75108  KG-65639
+#-PAIR: 007 I 029 Bianca Anghel             ROU     DN3 
+##      018  103456112 106741877
+029 001 003  FW-92816  KC-78581
+#-----: 007 O 033 Yekaterina Malysheva      RUS     DN2 
+##      011  113056783 106217020
+033 001 003  RH-93487  HT-53724
+#-PAIR: 008 I 007 Danielle Wotherspoon      CAN     DSA 
+##      004  104732378 101946375
+007 001 003  GT-69082  CW-83079
+#-----: 008 O 018 Maki Tabata               JPN     DSA 
+##      009  110646478 102837529
+018 001 003  NS-83182  FN-74233
+#-PAIR: 009 I 005 Kerry Simpson             CAN     DSA 
+##      010  110122251 114111846
+005 001 003  NK-58955  RZ-48550
+#-----: 009 O 002 Svetlana Radkevich        BLR     DSA 
+##      005  102162907 116311481
+002 001 003  CZ-99611  TN-48185
+#-PAIR: 010 I 022 Bo-Ra Lee                 KOR     DN2 
+##      022  102796956 100722433
+022 001 003  FN-33660  CC-59137
+#-----: 010 O 034 Yuliya Nemaya             RUS     DSA 
+##      013  103488175 107382287
+034 001 003  FX-24879  KP-18991
+#-PAIR: 011 I 009 Aihua Xing                CHN     DSA 
+##      032  102061448 102000459
+009 001 003  CX-98152  CX-37163
+#-----: 011 O 023 Sang-Hwa Lee              KOR     DA2 
+##      031  102295067 102250432
+023 001 003  FF-31771  FC-87136
+#-PAIR: 012 I 017 Shihomi Shinya            JPN     DSA 
+##      026  109349094 105761305
+017 001 003  LV-85798  HL-98009
+#-----: 012 O 039 Elli Ochowicz             USA     DSA 
+##      021  102763610 111219823
+039 001 003  FN-00314  PC-56527
+#-PAIR: 013 I 019 Sayuri Yoshii             JPN     DN4 
+##      034  102903434 102236433
+019 001 003  FP-40138  FC-73137
+#-----: 013 O 024 Paulien van Deutekom      NED     DSA 
+##      017  108688295 102293185
+024 001 003  LL-24999  FF-29889
+#-PAIR: 014 I 010 Shuang Zhang              CHN     DN2 
+##      028  108321019 102629101
+010 001 003  LF-57723  FK-65805
+#-----: 014 O 031 Svetlana Kaykan           RUS     DSA 
+##      025  112929877 109863028
+031 001 003  RG-66581  NF-99732
+#-PAIR: 015 I 016 Chiara Simionato          ITA     DSA 
+##      036  102855129 101865561
+016 001 003  FN-91833  CW-02265
+#-----: 015 O 013 Heike Hartmann            GER     DSA 
+##      027  103728134 110382059
+013 001 003  GC-64838  NP-18763
+#-PAIR: 016 I 028 Ireen Wüst                NED     DN3 
+##      008  109364686 113699420
+028 001 003  LW-01390  RT-36124
+#-----: 016 O 004 Shannon Rempel            CAN     DN4 
+##      023  111140411 102433532
+004 001 003  NZ-77115  FG-70236
+#-PAIR: 017 I 012 Anni Friesinger           GER     DSA 
+##      024  103618177 104021701
+012 001 003  FZ-54881  GH-58405
+#-----: 017 O 027 Marianne Timmer           NED     DSA 
+##      035  101964482 102218606
+027 001 003  CX-01186  FC-55310
+#-PAIR: 018 I 014 Jenny Wolf                GER     DSA 
+##      030  105268393 101016247
+014 001 003  HF-05097  CH-52951
+#-----: 018 O 025 Annette Gerritsen         NED     DN3 
+##      029  101270425 105508405
+025 001 003  CN-07129  HH-45109
+#-PAIR: 100 I 999 Reserved ----------
+##      033  102312354 101998467
+999 001 003  FF-49058  CX-35171
+#-PAIR: 100 I 999 Reserved ----------
+##      109  101468565 104927779
+999 001 003  CR-05269  GW-64483
+#-PAIR: 100 I 999 Reserved ----------
+##      110  101558412 102498050
+999 001 003  CR-95116  FH-34754
+#-PAIR: 100 I 999 Reserved ----------
+##      111  103851248 105244389
+999 001 003  GF-87952  HC-81093</value>
+  </data>
+  <data name="CFile" xml:space="preserve">
+    <value>011 000 E #01: Dames Neo-/Senioren 500 meter
+001 I 021 Annouk vd Weijden         HA      DN3 HA03735 VD WEIJDEN       00:41.1900 00500 m ???.??? 041.530 00:41.5300 (OK) 00:41.3700 
+001 O 000
+002 I 006 Anice Das                 HV      DN3 HV31175 DAS              00:41.0100 00500 m ???.??? 040.710 00:40.7100 (OK) 00:41.0100 
+002 O 008 Paulien van Deutekom      DH      DSA DH33020 VAN DEUTEKOM     00:39.6700 00500 m ???.??? 039.960 00:39.9600 (OK) 00:40.8900 
+003 I 005 Wieteke Cramer            HV      DSA HV42013 CRAMER           00:39.3700 00500 m ???.??? 040.280 00:40.2800 (PB) 00:40.9500 
+003 I 007 Sanne Delfgou             UT      DN3 UT01584 DELFGOU          00:40.7000 00500 m ???.??? 040.270 00:40.2700 (OK) 00:40.7000 
+004 O 004 Linda Bouwens             DH      DSA DH33021 BOUWENS          00:41.6900 00500 m ???.??? 040.800 00:40.8000 (OK) 00:41.7600 
+004 O 016 Sophie Nijman             DV      DN3 DV06199 NIJMAN           00:40.1400 00500 m ???.??? 040.320 00:40.3200 (OK) 00:40.1400 
+005 I 002 Esther Boer               HA      DSA HA01506 Boer             00:40.7800 00500 m ???.??? 040.410 00:40.4100 (PB) 00:40.7800 'y g‡"
+005 O 014 Ingeborg Kroon            HV      DN1 HV44581 I KROON          00:40.0900 00500 m ???.??? 039.900 00:39.9000 (OK) 00:40.2100 
+006 I 009 Tessa van Dijk            UT      DN3 UT02912 T VAN DIJK       00:39.7300 00500 m ???.??? 040.150 00:40.1500 (PB) 00:40.5100 
+006 O 013 Jorien Kranenborg         DV      DN3 DV04206 KRANENBORG       00:40.2100 00500 m ???.??? 040.140 00:40.1400 (PB) 00:40.6300 
+007 I 020 Jorien Voorhuis           DV      DN4 DV09107 VOORHUIS         00:39.8200 00500 m ???.??? 040.320 00:40.3200 (OK) 00:40.6900 
+007 O 023 Emilie Gale               DH      DSA DH33022 GALE             00:40.2500 00500 m ???.??? 040.010 00:40.0100 (PB) 00:40.2500 
+008 I 010 Marloes Gelderblom        DH      DSA DH51139 GELDERBLOM       00:39.2300 00500 m ???.??? 040.180 00:40.1800 (OK) 00:39.2800 
+008 O 018 Sanne vd Star             DH      DN3 DH10164 VAN DER STAR     00:38.6200 00500 m ???.??? 038.890 00:38.8900 (OK) 00:38.8500 
+009 I 011 Annette Gerritsen         AM      DN3 AM01278 GERRITSEN        00:37.6100 00500 m ???.??? [DQ___] 00:38.5200 (OK) 00:37.6300 
+009 O 003 Margot Boer               DH      DN3 DH19050 M BOER           00:37.9900 00500 m ???.??? 038.781 00:38.7800 (PB) 00:38.1300 
+010 I 022 Ireen Wüst                EV      DN3 EV02515 WUST             00:38.4400 00500 m ???.??? 039.380 00:39.3800 (PB) 00:40.0900 
+010 O 019 Marianne Timmer           GR      DSA GR13039 TIMMER           00:37.8600 00500 m ???.??? 038.850 00:38.8500 (PB) 00:37.8600 
+011 I 001 Natasja Bruintjes         EV      DN1 EV03038 BRUINTJES        00:39.8400 00500 m ???.??? 039.630 00:39.6300 (PB) 00:39.8400 
+011 O 015 Mayon Kuipers             HV      DN1 HV31730 KUIPERS          00:39.8700 00500 m ???.??? 040.100 00:40.1000 (OK) 00:39.8700</value>
+  </data>
+  <data name="SaraInfFile" xml:space="preserve">
+    <value>NR. |AFSTAND  |DATUM     |BAAN|ET-filenaam
+----+---------+----------+----+-----------
+  1  500  m.   04/11/2012  HV  C00500M.D01   Dames Neo-/Senioren 500 meter   #20080105CVNKS-D_
+  2  500  m.   04/11/2012  HV  C00500M.D02   Heren Neo-/Senioren 500 meter   #20080105CVNKS-H_
+  3  1000 m.   05/11/2012  HV  C01000M.D03   Dames Neo-/Senioren 1000 meter  #20080105CVNKS-D_
+  4  1000 m.   05/01/2008  HV  C01000M.D04   Heren Neo-/Senioren 1000 meter  #20080105CVNKS-H_
+  5  500  m.   06/01/2008  HV  C00500M.D05   Dames Neo-/Senioren 500 meter   #20080105CVNKS-D_
+  6  500  m.   06/01/2008  HV  C00500M.D06   Heren Neo-/Senioren 500 meter   #20080105CVNKS-H_
+  7  1000 m.   06/01/2008  HV  C01000M.D07   Dames Neo-/Senioren 1000 meter  #20080105CVNKS-D_
+  8  1000 m.   06/01/2008  HV  C01000M.D08   Heren Neo-/Senioren 1000 meter  #20080105CVNKS-H_
+ 98  500  m.   06/01/2008  HV  C00500M.D98   500 meter                       #20080104CVTEST-H
+ 99  1000 m.   06/01/2008  HV  C01000M.D99   1000 meter                      #20080104CVTEST-H</value>
+  </data>
+</root>

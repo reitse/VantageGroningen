@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{64D4A8F3-016A-47C1-88B9-C450FA2A903A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Emando.Vantage.Components.SpeedSkating.LongTrack</RootNamespace>
+    <AssemblyName>Emando.Vantage.Components.SpeedSkating.LongTrack.Sara2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework">
+      <HintPath>..\..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer">
+      <HintPath>..\..\packages\EntityFramework.6.0.2\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sara2Directory.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Emando.Vantage.Components.SpeedSkating\Emando.Vantage.Components.SpeedSkating.csproj">
+      <Project>{A706F8BA-00E4-4BBF-B6DF-0E1CA07C3E4F}</Project>
+      <Name>Emando.Vantage.Components.SpeedSkating</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Components\Emando.Vantage.Components.csproj">
+      <Project>{76D66F3E-A86F-4B2A-ABCE-29BE9C5939BE}</Project>
+      <Name>Emando.Vantage.Components</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Data.SpeedSkating.LongTrack.Sara2\Emando.Vantage.Data.SpeedSkating.LongTrack.Sara2.csproj">
+      <Project>{6FD7C9D8-0CD3-4488-99FF-B0982B63C67C}</Project>
+      <Name>Emando.Vantage.Data.SpeedSkating.LongTrack.Sara2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Entities.SpeedSkating\Emando.Vantage.Entities.SpeedSkating.csproj">
+      <Project>{A2596DD4-05EF-4E3A-BEDD-F060BB16F6EC}</Project>
+      <Name>Emando.Vantage.Entities.SpeedSkating</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Entities\Emando.Vantage.Entities.csproj">
+      <Project>{C33E80D2-AC14-478D-9353-21035D6D56DB}</Project>
+      <Name>Emando.Vantage.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

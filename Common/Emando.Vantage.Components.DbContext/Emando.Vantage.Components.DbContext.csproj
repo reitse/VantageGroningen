@@ -1,0 +1,208 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FAC252E0-A7B9-4C4B-8738-9A342027FA33}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Emando.Vantage.Components</RootNamespace>
+    <AssemblyName>Emando.Vantage.Components.DbContext</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Common.Logging, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Common.Logging.3.3.1\lib\net40\Common.Logging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.3.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Common.Logging.Core.3.3.1\lib\net40\Common.Logging.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataContext.cs" />
+    <Compile Include="DbContextTransactionProxy.cs" />
+    <Compile Include="IContextInitializer.cs" />
+    <Compile Include="IContextTransaction.cs" />
+    <Compile Include="IDataContext.cs" />
+    <Compile Include="IVantageContext.cs" />
+    <Compile Include="Migrations\201506100933294_InitialCreate.cs" />
+    <Compile Include="Migrations\201506100933294_InitialCreate.Designer.cs">
+      <DependentUpon>201506100933294_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201508141319272_Clubs.cs" />
+    <Compile Include="Migrations\201508141319272_Clubs.Designer.cs">
+      <DependentUpon>201508141319272_Clubs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201509171739239_PersonLicenseVenueSubscriptions.cs" />
+    <Compile Include="Migrations\201509171739239_PersonLicenseVenueSubscriptions.Designer.cs">
+      <DependentUpon>201509171739239_PersonLicenseVenueSubscriptions.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510042148417_NumberPrefixAndVenueClasses.cs" />
+    <Compile Include="Migrations\201510042148417_NumberPrefixAndVenueClasses.Designer.cs">
+      <DependentUpon>201510042148417_NumberPrefixAndVenueClasses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510061647345_ClubDefaultVenue.cs" />
+    <Compile Include="Migrations\201510061647345_ClubDefaultVenue.Designer.cs">
+      <DependentUpon>201510061647345_ClubDefaultVenue.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201510292045329_TransponderBags.cs" />
+    <Compile Include="Migrations\201510292045329_TransponderBags.Designer.cs">
+      <DependentUpon>201510292045329_TransponderBags.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512011854226_LicenseIssuerDisposableLicense.cs" />
+    <Compile Include="Migrations\201512011854226_LicenseIssuerDisposableLicense.Designer.cs">
+      <DependentUpon>201512011854226_LicenseIssuerDisposableLicense.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512072351349_ClubDefaultVenueWildcard.cs" />
+    <Compile Include="Migrations\201512072351349_ClubDefaultVenueWildcard.Designer.cs">
+      <DependentUpon>201512072351349_ClubDefaultVenueWildcard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512271116360_ReportTemplates.cs" />
+    <Compile Include="Migrations\201512271116360_ReportTemplates.Designer.cs">
+      <DependentUpon>201512271116360_ReportTemplates.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201601141342285_ReportTemplateRemoveDiscipline.cs" />
+    <Compile Include="Migrations\201601141342285_ReportTemplateRemoveDiscipline.Designer.cs">
+      <DependentUpon>201601141342285_ReportTemplateRemoveDiscipline.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201610272001583_ClubVenues.cs" />
+    <Compile Include="Migrations\201610272001583_ClubVenues.Designer.cs">
+      <DependentUpon>201610272001583_ClubVenues.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710291756599_PersonLicenseLegNumber.cs" />
+    <Compile Include="Migrations\201710291756599_PersonLicenseLegNumber.Designer.cs">
+      <DependentUpon>201710291756599_PersonLicenseLegNumber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
+    <Compile Include="NestedContextTransaction.cs" />
+    <Compile Include="PersonLicenseSetExtensions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlClubSource.cs" />
+    <Compile Include="SqlClubTarget.cs" />
+    <Compile Include="SqlPersonCategorySource.cs" />
+    <Compile Include="SqlPersonCategoryTarget.cs" />
+    <Compile Include="SqlPersonLicenseSource.cs" />
+    <Compile Include="SqlPersonLicenseTarget.cs" />
+    <Compile Include="SqlPersonSource.cs" />
+    <Compile Include="SqlPersonTarget.cs" />
+    <Compile Include="SqlSyncSourceBase.cs" />
+    <Compile Include="SqlSyncTargetBase.cs" />
+    <Compile Include="SqlVenueSource.cs" />
+    <Compile Include="SqlVenueTarget.cs" />
+    <Compile Include="SqlVenueTrackSource.cs" />
+    <Compile Include="SqlVenueTrackTarget.cs" />
+    <Compile Include="VantageContext.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Emando.Vantage.Components.Sync\Emando.Vantage.Components.Sync.csproj">
+      <Project>{E043B1DC-D6CE-4C13-A2B1-1F43AE634ED5}</Project>
+      <Name>Emando.Vantage.Components.Sync</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Components\Emando.Vantage.Components.csproj">
+      <Project>{76d66f3e-a86f-4b2a-abce-29be9c5939be}</Project>
+      <Name>Emando.Vantage.Components</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage\Emando.Vantage.csproj">
+      <Project>{A52704C2-860C-4030-A49F-AED05096653D}</Project>
+      <Name>Emando.Vantage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Entities\Emando.Vantage.Entities.csproj">
+      <Project>{C33E80D2-AC14-478D-9353-21035D6D56DB}</Project>
+      <Name>Emando.Vantage.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201506100933294_InitialCreate.resx">
+      <DependentUpon>201506100933294_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201508141319272_Clubs.resx">
+      <DependentUpon>201508141319272_Clubs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201509171739239_PersonLicenseVenueSubscriptions.resx">
+      <DependentUpon>201509171739239_PersonLicenseVenueSubscriptions.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510042148417_NumberPrefixAndVenueClasses.resx">
+      <DependentUpon>201510042148417_NumberPrefixAndVenueClasses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510061647345_ClubDefaultVenue.resx">
+      <DependentUpon>201510061647345_ClubDefaultVenue.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201510292045329_TransponderBags.resx">
+      <DependentUpon>201510292045329_TransponderBags.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512011854226_LicenseIssuerDisposableLicense.resx">
+      <DependentUpon>201512011854226_LicenseIssuerDisposableLicense.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512072351349_ClubDefaultVenueWildcard.resx">
+      <DependentUpon>201512072351349_ClubDefaultVenueWildcard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512271116360_ReportTemplates.resx">
+      <DependentUpon>201512271116360_ReportTemplates.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201601141342285_ReportTemplateRemoveDiscipline.resx">
+      <DependentUpon>201601141342285_ReportTemplateRemoveDiscipline.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201610272001583_ClubVenues.resx">
+      <DependentUpon>201610272001583_ClubVenues.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710291756599_PersonLicenseLegNumber.resx">
+      <DependentUpon>201710291756599_PersonLicenseLegNumber.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,421 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{26D42033-BE2D-42D2-8DC2-1FAEC446C43C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Emando.Vantage.Workflows.Competitions.SpeedSkating.LongTrack.Reporting</RootNamespace>
+    <AssemblyName>Emando.Vantage.Workflows.Competitions.SpeedSkating.LongTrack.Reporting</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.Reporting, Version=11.2.17.1025, Culture=neutral, PublicKeyToken=a9d7983dfcc261be">
+      <SpecificVersion>True</SpecificVersion>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CompetitorGroup.cs" />
+    <Compile Include="CompetitorGroupPointsReportLoader.LicenseComparer.cs" />
+    <Compile Include="CompetitorGroupPointsReportLoader.NationalityComparer.cs" />
+    <Compile Include="CompetitorGroupPointsReportLoader.HomeVenueComparer.cs" />
+    <Compile Include="CompetitorGroupPointsReportLoader.ClubComparer.cs" />
+    <Compile Include="CompetitorGroupPointsReportLoader.cs" />
+    <Compile Include="CompetitorGroupPointsRankingReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CompetitorGroupPointsRankingReport.Designer.cs">
+      <DependentUpon>CompetitorGroupPointsRankingReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IPairsDrawReport.cs" />
+    <Compile Include="MassStartDrawReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MassStartDrawReport.Designer.cs">
+      <DependentUpon>MassStartDrawReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MassStartDrawReportLoader.cs" />
+    <Compile Include="TeamCompetitorListReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TeamCompetitorListReport.Designer.cs">
+      <DependentUpon>TeamCompetitorListReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompetitorListReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CompetitorListReport.Designer.cs">
+      <DependentUpon>CompetitorListReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClassificationReportLoader.cs" />
+    <Compile Include="CompetitorListReportBookLoader.cs" />
+    <Compile Include="CompetitorListReportLoaderBase.cs" />
+    <Compile Include="DrawFillIn25Report.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DrawFillIn25Report.Designer.cs">
+      <DependentUpon>DrawFillIn25Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawFillIn13Report.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DrawFillIn13Report.Designer.cs">
+      <DependentUpon>DrawFillIn13Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawFillIn4Report.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DrawFillIn4Report.Designer.cs">
+      <DependentUpon>DrawFillIn4Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawFillInReportBookLoader.cs" />
+    <Compile Include="ICompetitorListReport.cs" />
+    <Compile Include="TeamDrawReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TeamDrawReport.Designer.cs">
+      <DependentUpon>TeamDrawReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawReportLoaderBase.cs" />
+    <Compile Include="DrawFillInReportLoader.cs" />
+    <Compile Include="MassStartDistanceResultReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MassStartDistanceResultReport.Designer.cs">
+      <DependentUpon>MassStartDistanceResultReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MassStartDistanceResultReportLoader.cs" />
+    <Compile Include="MassStartTranspondersReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="MassStartTranspondersReport.Designer.cs">
+      <DependentUpon>MassStartTranspondersReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DistanceResultReportBookLoader.cs" />
+    <Compile Include="DistanceResultReportLoader.cs" />
+    <Compile Include="ClassificationReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassificationReport.Designer.cs">
+      <DependentUpon>ClassificationReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DistanceDetailedResultReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DistanceDetailedResultReport.Designer.cs">
+      <DependentUpon>DistanceDetailedResultReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DistanceDetailedResultReportLoader.cs" />
+    <Compile Include="MassStartTranspondersReportLoader.cs" />
+    <Compile Include="RaceTranspondersReportLoader.cs" />
+    <Compile Include="RaceTranspondersReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RaceTranspondersReport.Designer.cs">
+      <DependentUpon>RaceTranspondersReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DrawReport.Designer.cs">
+      <DependentUpon>DrawReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DrawReportBookLoader.cs" />
+    <Compile Include="Functions.cs" />
+    <Compile Include="Pair.cs" />
+    <Compile Include="PairsFunctions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.nl.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.nl.resx</DependentUpon>
+    </Compile>
+    <Compile Include="DistanceResultReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DistanceResultReport.Designer.cs">
+      <DependentUpon>DistanceResultReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PointsRankingReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PointsRankingReport.Designer.cs">
+      <DependentUpon>PointsRankingReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TimeRankingReport.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TimeRankingReport.Designer.cs">
+      <DependentUpon>TimeRankingReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RankingReportLoader.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Emando.Vantage.Competitions.SpeedSkating\Emando.Vantage.Competitions.SpeedSkating.csproj">
+      <Name>Emando.Vantage.Competitions.SpeedSkating</Name>
+      <Project>{B5FC18DD-94CA-450C-B103-E892C7CE215E}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Competitions.SpeedSkating\Emando.Vantage.Competitions.SpeedSkating.csproj">
+      <Project>{b5fc18dd-94ca-450c-b103-e892c7ce215e}</Project>
+      <Name>Emando.Vantage.Competitions.SpeedSkating</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Competitions\Emando.Vantage.Competitions.csproj">
+      <Name>Emando.Vantage.Competitions</Name>
+      <Project>{A7881150-CA7D-4327-A507-D78ABBCD703A}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Competitions\Emando.Vantage.Competitions.csproj">
+      <Project>{a7881150-ca7d-4327-a507-d78abbcd703a}</Project>
+      <Name>Emando.Vantage.Competitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Components.Competitions.DbContext\Emando.Vantage.Components.Competitions.DbContext.csproj">
+      <Name>Emando.Vantage.Components.Competitions.DbContext</Name>
+      <Project>{3D27167C-5B52-4FC1-9AD6-E65205B10821}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Components.Competitions.SpeedSkating\Emando.Vantage.Components.Competitions.SpeedSkating.csproj">
+      <Name>Emando.Vantage.Components.Competitions.SpeedSkating</Name>
+      <Project>{A706F8BA-00E4-4BBF-B6DF-0E1CA07C3E4F}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Components.Competitions\Emando.Vantage.Components.Competitions.csproj">
+      <Name>Emando.Vantage.Components.Competitions</Name>
+      <Project>{D4FB02B1-2805-4CD8-8602-9B063DB7C091}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Components.DbContext\Emando.Vantage.Components.DbContext.csproj">
+      <Name>Emando.Vantage.Components.DbContext</Name>
+      <Project>{FAC252E0-A7B9-4C4B-8738-9A342027FA33}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Entities.Competitions\Emando.Vantage.Entities.Competitions.csproj">
+      <Project>{9df95995-abc6-4608-bca6-13f813323f79}</Project>
+      <Name>Emando.Vantage.Entities.Competitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Entities\Emando.Vantage.Entities.csproj">
+      <Project>{c33e80d2-ac14-478d-9353-21035d6d56db}</Project>
+      <Name>Emando.Vantage.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Workflows.Competitions.Reporting\Emando.Vantage.Workflows.Competitions.Reporting.csproj">
+      <Name>Emando.Vantage.Workflows.Competitions.Reporting</Name>
+      <Project>{DB5CE5D7-AF6B-44E0-A9D2-EDA1CA94FDB4}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Workflows.Competitions.Reporting\Emando.Vantage.Workflows.Competitions.Reporting.csproj">
+      <Project>{db5ce5d7-af6b-44e0-a9d2-eda1ca94fdb4}</Project>
+      <Name>Emando.Vantage.Workflows.Competitions.Reporting</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Workflows.Competitions.SpeedSkating\Emando.Vantage.Workflows.Competitions.SpeedSkating.csproj">
+      <Project>{3c327ee4-b2e6-4443-80a0-90d76605b3d4}</Project>
+      <Name>Emando.Vantage.Workflows.Competitions.SpeedSkating</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Workflows.Competitions\Emando.Vantage.Workflows.Competitions.csproj">
+      <Name>Emando.Vantage.Workflows.Competitions</Name>
+      <Project>{3F415639-1B0D-4427-926B-1A749A2388BE}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Workflows.Competitions\Emando.Vantage.Workflows.Competitions.csproj">
+      <Project>{3f415639-1b0d-4427-926b-1a749a2388be}</Project>
+      <Name>Emando.Vantage.Workflows.Competitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Workflows.Reporting.TelerikReports\Emando.Vantage.Workflows.Reporting.TelerikReports.csproj">
+      <Name>Emando.Vantage.Workflows.Reporting.TelerikReports</Name>
+      <Project>{3CC9B564-D845-407F-BA6F-A2A2F4C12E5D}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Workflows.Reporting\Emando.Vantage.Workflows.Reporting.csproj">
+      <Name>Emando.Vantage.Workflows.Reporting</Name>
+      <Project>{2d1575c0-86d7-4f92-9fc0-40d6a4dd668a}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Entities.Competitions\Emando.Vantage.Entities.Competitions.csproj">
+      <Name>Emando.Vantage.Entities.Competitions</Name>
+      <Project>{9DF95995-ABC6-4608-BCA6-13F813323F79}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Entities\Emando.Vantage.Entities.csproj">
+      <Name>Emando.Vantage.Entities</Name>
+      <Project>{C33E80D2-AC14-478D-9353-21035D6D56DB}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Workflows\Emando.Vantage.Workflows.csproj">
+      <Project>{1108476a-2832-4734-93df-80c0bcc02f66}</Project>
+      <Name>Emando.Vantage.Workflows</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage\Emando.Vantage.csproj">
+      <Name>Emando.Vantage</Name>
+      <Project>{A52704C2-860C-4030-A49F-AED05096653D}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage\Emando.Vantage.csproj">
+      <Project>{a52704c2-860c-4030-a49f-aed05096653d}</Project>
+      <Name>Emando.Vantage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CompetitorGroupPointsRankingReport.nl.resx">
+      <DependentUpon>CompetitorGroupPointsRankingReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompetitorGroupPointsRankingReport.resx">
+      <DependentUpon>CompetitorGroupPointsRankingReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawReport.nl-NL.resx">
+      <DependentUpon>DrawReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MassStartDrawReport.nl.resx">
+      <DependentUpon>MassStartDrawReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MassStartDrawReport.resx">
+      <DependentUpon>MassStartDrawReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeamCompetitorListReport.nl.resx">
+      <DependentUpon>TeamCompetitorListReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeamCompetitorListReport.resx">
+      <DependentUpon>TeamCompetitorListReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompetitorListReport.nl.resx">
+      <DependentUpon>CompetitorListReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompetitorListReport.resx">
+      <DependentUpon>CompetitorListReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassificationReport.nl.resx">
+      <DependentUpon>ClassificationReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClassificationReport.resx">
+      <DependentUpon>ClassificationReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DistanceDetailedResultReport.nl.resx">
+      <DependentUpon>DistanceDetailedResultReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DistanceDetailedResultReport.resx">
+      <DependentUpon>DistanceDetailedResultReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawFillIn25Report.nl.resx">
+      <DependentUpon>DrawFillIn25Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawFillIn25Report.resx">
+      <DependentUpon>DrawFillIn25Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawFillIn13Report.nl.resx">
+      <DependentUpon>DrawFillIn13Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawFillIn13Report.resx">
+      <DependentUpon>DrawFillIn13Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawFillIn4Report.nl.resx">
+      <DependentUpon>DrawFillIn4Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawFillIn4Report.resx">
+      <DependentUpon>DrawFillIn4Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeamDrawReport.nl.resx">
+      <DependentUpon>TeamDrawReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TeamDrawReport.resx">
+      <DependentUpon>TeamDrawReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MassStartDistanceResultReport.nl.resx">
+      <DependentUpon>MassStartDistanceResultReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MassStartDistanceResultReport.resx">
+      <DependentUpon>MassStartDistanceResultReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MassStartTranspondersReport.nl.resx">
+      <DependentUpon>MassStartTranspondersReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MassStartTranspondersReport.resx">
+      <DependentUpon>MassStartTranspondersReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DistanceResultReport.nl.resx">
+      <DependentUpon>DistanceResultReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawReport.nl.resx">
+      <DependentUpon>DrawReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PointsRankingReport.nl.resx">
+      <DependentUpon>PointsRankingReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaceTranspondersReport.nl.resx">
+      <DependentUpon>RaceTranspondersReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RaceTranspondersReport.resx">
+      <DependentUpon>RaceTranspondersReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DrawReport.resx">
+      <DependentUpon>DrawReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.nl.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.nl.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DistanceResultReport.resx">
+      <DependentUpon>DistanceResultReport.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PointsRankingReport.resx">
+      <DependentUpon>PointsRankingReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeRankingReport.nl.resx">
+      <DependentUpon>TimeRankingReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeRankingReport.resx">
+      <DependentUpon>TimeRankingReport.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

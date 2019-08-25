@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D73C752F-9C32-4F93-A1C3-B11797132EA0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Emando.Vantage.Api.Client.Competitions.Registrations</RootNamespace>
+    <AssemblyName>Emando.Vantage.Api.Client.Competitions.Registrations</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Demo|AnyCPU'">
+    <OutputPath>bin\Demo\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="RegistrationsApiClient.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Emando.Vantage.Api.Client\Emando.Vantage.Api.Client.csproj">
+      <Project>{4F096B59-72EF-45AE-B209-3FDAD3B7FA0D}</Project>
+      <Name>Emando.Vantage.Api.Client</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Api.Client.Competitions\Emando.Vantage.Api.Client.Competitions.csproj">
+      <Project>{05E3B330-05A7-47BD-9C7C-02AD1183BB4D}</Project>
+      <Name>Emando.Vantage.Api.Client.Competitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Api.Models.Competitions.Registrations\Emando.Vantage.Api.Models.Competitions.Registrations.csproj">
+      <Project>{401D665A-E7D1-4164-8673-CCF7FFABE004}</Project>
+      <Name>Emando.Vantage.Api.Models.Competitions.Registrations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Api.Models.Competitions\Emando.Vantage.Api.Models.Competitions.csproj">
+      <Project>{A9495111-5756-40BA-9856-50EE2C9DCFED}</Project>
+      <Name>Emando.Vantage.Api.Models.Competitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Models.Competitions.Registrations\Emando.Vantage.Models.Competitions.Registrations.csproj">
+      <Project>{2D52867B-DC5B-4B38-AE4A-FB03C1D2AB47}</Project>
+      <Name>Emando.Vantage.Models.Competitions.Registrations</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage.Models.Competitions\Emando.Vantage.Models.Competitions.csproj">
+      <Project>{4B360B51-07D8-41E5-A2BC-BC293CBEE2BC}</Project>
+      <Name>Emando.Vantage.Models.Competitions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Emando.Vantage\Emando.Vantage.csproj">
+      <Project>{A52704C2-860C-4030-A49F-AED05096653D}</Project>
+      <Name>Emando.Vantage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

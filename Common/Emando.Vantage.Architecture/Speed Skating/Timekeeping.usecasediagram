@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="dfa62116-f791-4d0b-87b0-72b440e95b3e" name="Timekeeping" linkedPackageId="c02f5089-51e5-497c-a3b0-af4c65567cc4" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="3967709e-48bb-4c2c-85a9-c8e075ef5cbd">
+      <profileInstance Id="b8eeaddf-9285-446b-ac1b-8c32d8157cab" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4b6c0424-a0d8-4dd8-a0a3-92e301d11dc5">
+      <profileInstance Id="34027f37-4877-41c0-845b-3e2037542740" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="e2afcf28-aea7-417d-b2f4-6f44183b83e4" name="Timekeeper" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="85699adb-8c5c-4d70-9a3b-4a4f47de015c" />
+        <targetEnds>
+          <association Id="c6a5e80e-e6a5-42ff-9fbc-4f795efe5553" isDerived="false" sourceEndRoleName="Timekeeper" targetEndRoleName="Configure hardware" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fe6e4d5a-1d00-4331-86dd-60f5569a4dba" LastKnownName="Configure hardware" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="59853a3d-fd06-4407-b0c6-741d906a78d0" name="Timekeeper" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="10302bb9-9345-4683-81ae-32a109b76c75" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="52f82019-7f23-45e5-9210-0809ce298713" name="Configure hardware" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="0c5448ae-6bdb-4433-b96f-b614c833b1ea" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="9673df7e-0f85-49a2-ad70-1cb15e6e744f" />
+          </association>
+          <association Id="9f2642cb-0017-4bb9-ba45-7bb0fb8d9c22" isDerived="false" sourceEndRoleName="Timekeeper" targetEndRoleName="Select competition" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9c0196f9-4b19-411f-8fa8-aa635cc4f8b0" LastKnownName="Select competition" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a57306ee-5171-4b5b-ba82-c062881eb26b" name="Timekeeper" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8a81051a-324a-4ed3-b764-0d8043841926" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="576b0fa5-564a-4738-8e97-c25d652036b5" name="Select competition" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="eeed1d57-9fe3-45d1-91d3-a3f3fb67b1c0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="59bbb3c0-f6d2-4629-803a-34daf356e2f9" />
+          </association>
+          <association Id="3aa3e3fc-c9ee-414a-8bbf-dd5f419b129c" isDerived="false" sourceEndRoleName="Timekeeper" targetEndRoleName="Activate distance" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="d4735138-c95a-4c2d-8070-8819d6b2c2de" LastKnownName="Activate distance" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="01c99e1e-b703-4951-89cb-9584c957a166" name="Timekeeper" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="1b406df0-2013-4f0c-80a9-c928a68353b8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="003e8855-0250-4d92-b837-194971fe9cbc" name="Activate distance" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="03094e54-149b-4343-a71b-f81ed866843e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="df43aa16-4093-499b-a759-ce7ae7402f28" />
+          </association>
+          <association Id="f51859db-d8f0-4032-9c3b-e7d2aa22d370" isDerived="false" sourceEndRoleName="Timekeeper" targetEndRoleName="Activate race" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="c3eb8c3a-91d2-4572-acdf-c96aa9b63eba" LastKnownName="Activate race" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="13e43993-acf7-44b4-978b-580e83460294" name="Timekeeper" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="dbaac795-e778-4340-bf15-788237548ed7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="565cf7e7-9c93-4e31-9f12-081b81fd16b9" name="Activate race" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="02124c9e-d0e1-402c-8d3b-d738c5804a22" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="da719801-2b3d-4e46-9ad9-f1792e55ffc6" />
+          </association>
+          <association Id="d0d585d0-8c0a-4800-8041-2c66f40cdec0" isDerived="false" sourceEndRoleName="Timekeeper" targetEndRoleName="Register results" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="4f480bc2-3f90-4fac-9d68-ff882e330468" LastKnownName="Register results" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1e2771bc-ce64-463d-b748-ffb8c5497e94" name="Timekeeper" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="e3d905fe-01d1-4d20-bc70-a305f2c1c310" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c80feda6-98c6-4ed9-9e5b-067e475e9afc" name="Register results" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="68d54da1-512b-4f3e-a8cf-51c038cb2dfb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2749d62b-a75b-44ff-94c6-92d66c768225" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="8cfc8123-e49b-4956-9169-151c48e5085b" name="Timekeeping" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="8a1bb45f-7d95-4358-b54a-7907f7561f26" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="9c0196f9-4b19-411f-8fa8-aa635cc4f8b0" name="Select competition" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="625f16d1-a749-4e64-bba0-043e6957af73" />
+        <subjects>
+          <subsystemMoniker Id="8cfc8123-e49b-4956-9169-151c48e5085b" LastKnownName="Timekeeping" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="d4735138-c95a-4c2d-8070-8819d6b2c2de" name="Activate distance" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="0bc4c38f-09a8-42ad-973e-34fd1cca6719" />
+        <subjects>
+          <subsystemMoniker Id="8cfc8123-e49b-4956-9169-151c48e5085b" LastKnownName="Timekeeping" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="fe6e4d5a-1d00-4331-86dd-60f5569a4dba" name="Configure hardware" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="d3f1b2d3-aa8d-400a-a5c8-0742a4b80685" />
+        <subjects>
+          <subsystemMoniker Id="8cfc8123-e49b-4956-9169-151c48e5085b" LastKnownName="Timekeeping" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="4f480bc2-3f90-4fac-9d68-ff882e330468" name="Register results" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f3417e06-02b7-44f9-b41c-0de07a9cfdfe" />
+        <additions>
+          <include Id="6e132c06-7f1c-4efc-977f-fb71ff95a52e">
+            <useCaseMoniker Id="2c4571e9-16cf-4492-ad47-7cfea2f9ec83" LastKnownName="Reset clock" />
+            <elementDefinition Id="6b8b9350-4d34-4a11-87cd-3cc3d150bcdc" />
+          </include>
+          <include Id="6ce788ec-6e52-4424-b60d-03fdd406a928">
+            <useCaseMoniker Id="588cc80b-b01f-4250-84a4-f8cdf9c22652" LastKnownName="Override passing order" />
+            <elementDefinition Id="bb32d3bd-5fde-470f-87e6-2c0d79778fd6" />
+          </include>
+          <include Id="1a50827d-fde9-4bb3-a391-2d61f6f36cd1">
+            <useCaseMoniker Id="942ad397-2549-4238-9813-4c00d6917723" LastKnownName="Commit race transaction" />
+            <elementDefinition Id="8acdb5a7-4ae0-4203-b6a5-3608b21d9f71" />
+          </include>
+          <include Id="3d9b0556-6dc4-4776-ab87-dfad10531c4d">
+            <useCaseMoniker Id="693487ea-03e1-476b-9bd9-5142a1005f88" LastKnownName="Edit laps" />
+            <elementDefinition Id="f6d9e138-0913-4731-8b09-5a6f588e4b95" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="8cfc8123-e49b-4956-9169-151c48e5085b" LastKnownName="Timekeeping" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="c3eb8c3a-91d2-4572-acdf-c96aa9b63eba" name="Activate race" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b4be5925-3c20-46d3-aeb3-bdd84677add5" />
+        <additions>
+          <include Id="3dd13597-b02a-424b-a7b5-74a1bbbacc13">
+            <useCaseMoniker Id="b08defa0-269e-40b1-908b-462a4d5d65aa" LastKnownName="Start race transaction" />
+            <elementDefinition Id="42f80d02-9650-43b4-b64a-a5a86a6310a6" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="8cfc8123-e49b-4956-9169-151c48e5085b" LastKnownName="Timekeeping" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="2c4571e9-16cf-4492-ad47-7cfea2f9ec83" name="Reset clock" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a59aea1a-f618-4472-92e2-06d3431e34a9" />
+        <subjects>
+          <subsystemMoniker Id="8cfc8123-e49b-4956-9169-151c48e5085b" LastKnownName="Timekeeping" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="588cc80b-b01f-4250-84a4-f8cdf9c22652" name="Override passing order" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="5c1aacc0-96a6-43f0-b9e0-2dafae259ae9" />
+        <subjects>
+          <subsystemMoniker Id="8cfc8123-e49b-4956-9169-151c48e5085b" LastKnownName="Timekeeping" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="693487ea-03e1-476b-9bd9-5142a1005f88" name="Edit laps" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3b71eba9-f89e-498e-b85a-854a818997c5" />
+        <subjects>
+          <subsystemMoniker Id="8cfc8123-e49b-4956-9169-151c48e5085b" LastKnownName="Timekeeping" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="b08defa0-269e-40b1-908b-462a4d5d65aa" name="Start race transaction" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="e575cad2-1eb3-40a4-9b1d-f5ba8cec4901" />
+        <subjects>
+          <subsystemMoniker Id="8cfc8123-e49b-4956-9169-151c48e5085b" LastKnownName="Timekeeping" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="942ad397-2549-4238-9813-4c00d6917723" name="Commit race transaction" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6bcc5fa1-12d8-433f-a390-93f05f6adc54" />
+        <subjects>
+          <subsystemMoniker Id="8cfc8123-e49b-4956-9169-151c48e5085b" LastKnownName="Timekeeping" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="c02f5089-51e5-497c-a3b0-af4c65567cc4" name="Sports.Architecture">
+    <elementDefinition Id="ba050b7e-0cce-40b2-b8ee-8010a7f98fba" />
+  </package>
+</useCaseModelRoot>

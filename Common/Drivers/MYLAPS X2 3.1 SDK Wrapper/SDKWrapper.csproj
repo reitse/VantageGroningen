@@ -1,0 +1,190 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9BD32BF6-6B90-4A3E-BB1E-D278B9665638}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MylapsSDK</RootNamespace>
+    <AssemblyName>SDKWrapper</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <BaseIntermediateOutputPath>..\obj</BaseIntermediateOutputPath>
+    <SccProjectName>%24/Vantage/Server/main/Common/Drivers/MYLAPS X2 3.1 SDK Wrapper</SccProjectName>
+    <SccLocalPath>.</SccLocalPath>
+    <SccAuxPath>https://emando.visualstudio.com/defaultcollection</SccAuxPath>
+    <SccProvider>{4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <DebugType>full</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|AnyCPU'">
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data">
+      <HintPath Condition="'$(Platform)' == 'x64'">C:\Windows\Microsoft.NET\Framework64\v2.0.50727\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Containers\AvailableApplianceContainer.cs" />
+    <Compile Include="Containers\CompetitorContainer.cs" />
+    <Compile Include="Containers\DecoderPresetGroupContainer.cs" />
+    <Compile Include="Containers\generics\AbstractSortedGenericContainer.cs" />
+    <Compile Include="Containers\generics\AbstractSortedGenericWithModifierContainer.cs" />
+    <Compile Include="Containers\ApplianceContainer.cs" />
+    <Compile Include="Containers\AuxEventContainer.cs" />
+    <Compile Include="Containers\AuxStatusContainer.cs" />
+    <Compile Include="Containers\BeaconContainer.cs" />
+    <Compile Include="Containers\BeaconDownloadStatusContainer.cs" />
+    <Compile Include="Containers\BeaconDownloadTriggerContainer.cs" />
+    <Compile Include="Containers\BeaconLogAndDataContainer.cs" />
+    <Compile Include="Containers\generics\AbstractSortedSingleObjectContainer.cs" />
+    <Compile Include="Containers\LoopContainer.cs" />
+    <Compile Include="Containers\LoopTriggerContainer.cs" />
+    <Compile Include="Containers\ManualEventContainer.cs" />
+    <Compile Include="Containers\DecoderStatusContainer.cs" />
+    <Compile Include="Containers\DriverInfoContainer.cs" />
+    <Compile Include="Containers\PassingContainer.cs" />
+    <Compile Include="Containers\PassingFirstContactContainer.cs" />
+    <Compile Include="Containers\PassingTriggerContainer.cs" />
+    <Compile Include="Containers\SegmentContainer.cs" />
+    <Compile Include="Containers\TrackSolutionContainer.cs" />
+    <Compile Include="Containers\DecoderContainer.cs" />
+    <Compile Include="Containers\IOTerminalContainer.cs" />
+    <Compile Include="Containers\SystemSetupContainer.cs" />
+    <Compile Include="Containers\TransponderContainer.cs" />
+    <Compile Include="Containers\TransponderStatusContainer.cs" />
+    <Compile Include="Containers\TwoWayMessageContainer.cs" />
+    <Compile Include="Exceptions\MylapsException.cs" />
+    <Compile Include="GeneratedObjects\Competitor.cs" />
+    <Compile Include="GeneratedObjects\DecoderPresetGroup.cs" />
+    <Compile Include="GeneratedObjects\PassingTrigger.cs" />
+    <Compile Include="NotifyHandlers\NotifyHandlers.cs" />
+    <Compile Include="MylapsSDKLibrary\MylapsSDKLibrary.cs" />
+    <Compile Include="Objects\AuxEvent.cs" />
+    <Compile Include="Objects\AuxStatus.cs" />
+    <Compile Include="Objects\generics\AbstractGenericNativeObject.cs" />
+    <Compile Include="Objects\LoopTrigger.cs" />
+    <Compile Include="Objects\DriverInfo.cs" />
+    <Compile Include="Objects\ManualEvent.cs" />
+    <Compile Include="Objects\Decoder.cs" />
+    <Compile Include="Objects\DecoderStatus.cs" />
+    <Compile Include="Objects\EventData.cs" />
+    <Compile Include="Objects\MTA.cs" />
+    <Compile Include="Objects\IObjectWithID.cs" />
+    <Compile Include="Objects\Passing.cs" />
+    <Compile Include="Objects\PassingFirstContact.cs" />
+    <Compile Include="Objects\PassingTrigger.cs" />
+    <Compile Include="Objects\SDK.cs" />
+    <Compile Include="Containers\TransponderGroupContainer.cs" />
+    <Compile Include="GeneratedObjects\AuxEvent.cs" />
+    <Compile Include="GeneratedObjects\AuxStatus.cs" />
+    <Compile Include="GeneratedObjects\AvailableAppliance.cs" />
+    <Compile Include="GeneratedObjects\BeaconData.cs" />
+    <Compile Include="GeneratedObjects\BeaconDownloadConfig.cs" />
+    <Compile Include="GeneratedObjects\BeaconDownloadStatus.cs" />
+    <Compile Include="GeneratedObjects\BeaconDownloadTrigger.cs" />
+    <Compile Include="GeneratedObjects\BeaconLog.cs" />
+    <Compile Include="GeneratedObjects\ChartImage.cs" />
+    <Compile Include="GeneratedObjects\Decoder.cs" />
+    <Compile Include="GeneratedObjects\DecoderStatus.cs" />
+    <Compile Include="GeneratedObjects\DriverInfo.cs" />
+    <Compile Include="GeneratedObjects\IOTerminal.cs" />
+    <Compile Include="GeneratedObjects\Loop.cs" />
+    <Compile Include="GeneratedObjects\LoopTrigger.cs" />
+    <Compile Include="GeneratedObjects\ManualEvent.cs" />
+    <Compile Include="GeneratedObjects\Passing.cs" />
+    <Compile Include="GeneratedObjects\PassingFirstContact.cs" />
+    <Compile Include="GeneratedObjects\Sector.cs" />
+    <Compile Include="GeneratedObjects\Segment.cs" />
+    <Compile Include="GeneratedObjects\Sequence.cs" />
+    <Compile Include="GeneratedObjects\SequenceSegment.cs" />
+    <Compile Include="GeneratedObjects\SystemSetup.cs" />
+    <Compile Include="GeneratedObjects\SystemSetupPicture.cs" />
+    <Compile Include="GeneratedObjects\Timezone.cs" />
+    <Compile Include="GeneratedObjects\TrackSolution.cs" />
+    <Compile Include="GeneratedObjects\TrackSolutionGroup.cs" />
+    <Compile Include="GeneratedObjects\Transponder.cs" />
+    <Compile Include="GeneratedObjects\TransponderGroup.cs" />
+    <Compile Include="GeneratedObjects\TransponderStatus.cs" />
+    <Compile Include="GeneratedObjects\TwoWayMessage.cs" />
+    <Compile Include="GeneratedObjects\User.cs" />
+    <Compile Include="Objects\Transponder.cs" />
+    <Compile Include="Objects\TransponderStatus.cs" />
+    <Compile Include="Objects\TwoWayMessage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\MdpTime.cs" />
+    <Compile Include="MylapsSDKLibrary\Modifier.cs" />
+    <Compile Include="Utilities\SDKGlobal.cs" />
+    <Compile Include="Utilities\Tuple.cs" />
+  </ItemGroup>
+  <!-- <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup> -->
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

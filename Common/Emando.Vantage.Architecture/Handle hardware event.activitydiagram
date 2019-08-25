@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/SequenceDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/dsltools/UseCaseModel" dslVersion="1.0.0.0" Id="8c4f7b5a-af4e-41cb-93e4-5f925d505ad2" name="Handle hardware event" linkedPackageId="c8e83318-5d9d-411b-b2e9-d86320b74b4d" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <ownedCommentsInternal>
+    <comment Id="24ed678e-94ba-44cb-90d6-ba49c18dfcc3">
+      <elementDefinition Id="3d2656fa-4e7d-4e3a-af70-5484ad4f2249" />
+      <body>Lap and speed calculation may not return a value, depending on the discipline. For example, in speed skating team pursuit, only the first transponder passing from the third person in a team (competitor) generates a lap</body>
+    </comment>
+  </ownedCommentsInternal>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="970c747a-5ede-480a-baf2-26d70974c432" name="Handle hardware event" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="5ff60d49-78ee-4dc5-8048-5e86ac69a510" />
+        <nodes>
+          <initialNode Id="f4062e85-1c45-4934-9aad-143d9ead0697" name="Initial1" isLeaf="false">
+            <elementDefinition Id="31c80826-2e74-4fa5-a4cf-7f43e73e5828" />
+            <flowNodeTargets>
+              <controlFlow Id="1a76461e-0531-4018-b01e-62c80a4c3afd" isLeaf="false">
+                <sendSignalActionMoniker Id="978d0e68-4d12-4878-b5fc-2695fbeff39d" LastKnownName="Hardware event generated" />
+                <elementDefinition Id="f6c8ee87-d2ca-4f6d-b5b7-9e2ac5de2066" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <sendSignalAction Id="978d0e68-4d12-4878-b5fc-2695fbeff39d" name="Hardware event generated" isLeaf="false">
+            <elementDefinition Id="6d006fcd-fd6f-4e3f-9a2d-cbcac436de70" />
+            <flowNodeTargets>
+              <controlFlow Id="795562ec-3625-4a88-a7c6-39b819a531ea" isLeaf="false">
+                <acceptEventActionMoniker Id="50b42b96-4ed4-444a-8ac1-10c57ffd6409" LastKnownName="Receive hardware event" />
+                <elementDefinition Id="b5e741ed-c327-4330-9e7e-0994ba3870d1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </sendSignalAction>
+          <acceptEventAction Id="50b42b96-4ed4-444a-8ac1-10c57ffd6409" name="Receive hardware event" isLeaf="false" isUnmarshall="false">
+            <elementDefinition Id="822b5d24-0f3c-4db9-ba54-1fb07803ea54" />
+            <objectFlowTargets>
+              <objectFlow Id="b4fc1f5c-9a7e-466a-8699-c04fb8158d9a" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="e2187996-dd14-436c-8f6c-637d12bfc927" LastKnownName="Vendor-specific event data" />
+                <elementDefinition Id="6bd10ca8-fee5-4c72-8bfb-ec9c560bd3b2" />
+              </objectFlow>
+            </objectFlowTargets>
+          </acceptEventAction>
+          <decisionNode Id="17aa7e8a-e7e7-4ef3-ab6d-a8c5f8e482ad" name="Decision1" isLeaf="false">
+            <elementDefinition Id="47e7349f-cc7e-42e9-9404-69d464605d82" />
+            <flowNodeTargets>
+              <controlFlow Id="6b28b114-b916-4e5d-9e20-ced5b9c7ec4c" guard="Start event" isLeaf="false">
+                <decisionNodeMoniker Id="0f27fc07-8740-43dc-a4a1-17b24a5732f1" LastKnownName="Decision4" />
+                <elementDefinition Id="a0d0bf12-ec5a-40fb-aa96-48aef53c7287" />
+              </controlFlow>
+              <controlFlow Id="df7a3ced-c447-4d68-bd2e-a448c0bddadb" guard="Passing event" isLeaf="false">
+                <opaqueActionMoniker Id="706df0cb-46d6-45e2-8cef-f3493c41e7f5" LastKnownName="Lookup competitor" />
+                <elementDefinition Id="64c65b12-4c2d-4791-9ff3-dd25e0d3a0d1" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <activityFinalNode Id="e129c09c-5fe5-4438-afee-925ffb4fa7bf" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="797f4f54-07e5-4097-a0bc-ff7a9b701abe" />
+          </activityFinalNode>
+          <decisionNode Id="31a0f1dc-556a-4c44-a5cd-6827d8fabced" name="Decision2" isLeaf="false">
+            <elementDefinition Id="c4bafe0f-80dc-4a97-89f4-2f384565e77a" />
+            <flowNodeTargets>
+              <controlFlow Id="afc2b9e6-d853-45d7-ab31-ff5c47aa6a30" guard="Competitor not active" isLeaf="false">
+                <opaqueActionMoniker Id="d8203c9a-0b00-4dde-9e39-47a14d35dda6" LastKnownName="Update competitor's last seen time" />
+                <elementDefinition Id="cee070d8-27ae-4454-a7e2-604a122bb019" />
+              </controlFlow>
+              <controlFlow Id="06dbec5c-cf87-47d0-845d-5e7f283e3ee4" guard="Competitor active" isLeaf="false">
+                <decisionNodeMoniker Id="642d4670-2ae3-4e93-9ed8-cdc80cd450ca" LastKnownName="Decision3" />
+                <elementDefinition Id="2d8def94-8bd7-4b74-a845-7caa8c8d6901" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode Id="642d4670-2ae3-4e93-9ed8-cdc80cd450ca" name="Decision3" isLeaf="false">
+            <elementDefinition Id="c83d3320-897c-48ad-b06d-10f3991dda80" />
+            <flowNodeTargets>
+              <controlFlow Id="c7ce1f63-6408-4296-a4c5-86c10b11a90c" guard="Finish loop" isLeaf="false">
+                <opaqueActionMoniker Id="78e48c7f-e49e-4a18-86af-d99c9e259b0c" LastKnownName="Calculate lap" />
+                <elementDefinition Id="bdc850c1-801e-4de1-b07c-f45007eb48a6" />
+              </controlFlow>
+              <controlFlow Id="8642562b-08a8-47e7-ab4c-4ccb6a36850d" guard="Other loop" isLeaf="false">
+                <opaqueActionMoniker Id="9dbf654d-60d3-4382-aea4-4e2245750e3a" LastKnownName="Calculate speed" />
+                <elementDefinition Id="882de306-5f31-4474-a8f6-b59215be60b5" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="d8203c9a-0b00-4dde-9e39-47a14d35dda6" name="Update competitor's last seen time" isLeaf="false">
+            <elementDefinition Id="c202c796-d890-4876-b039-c114ec39c240" />
+            <flowNodeTargets>
+              <controlFlow Id="7f8b9fd9-1acb-454f-97b1-910fda86c732" isLeaf="false">
+                <opaqueActionMoniker Id="87079b5b-d496-4b64-9bd8-c98b22a49eb0" LastKnownName="Record in trash transaction" />
+                <elementDefinition Id="e9941612-f8e3-4113-8fe4-bee1ac04e7b0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="9dbf654d-60d3-4382-aea4-4e2245750e3a" name="Calculate speed" isLeaf="false">
+            <elementDefinition Id="218155e2-7ee1-4a3d-b7b5-5c9789ac358c" />
+            <flowNodeTargets>
+              <controlFlow Id="572f05aa-c1ef-4f90-b08d-dcef824a2aae" isLeaf="false">
+                <decisionNodeMoniker Id="76c4071c-06e2-4b19-82ec-2d3c51700eda" LastKnownName="Decision6" />
+                <elementDefinition Id="8bf51d36-b09a-4e77-86ea-1d8b37d4c4de" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="78e48c7f-e49e-4a18-86af-d99c9e259b0c" name="Calculate lap" isLeaf="false">
+            <elementDefinition Id="e7ff6a3d-462d-40b7-a724-dc4b9281fb44" />
+            <flowNodeTargets>
+              <controlFlow Id="4de4b2ba-dd38-4e33-affe-f9b00282a69f" isLeaf="false">
+                <decisionNodeMoniker Id="908660c4-aee3-4a0e-b905-feba60174490" LastKnownName="Decision5" />
+                <elementDefinition Id="437e91e1-7aac-409e-958d-241e6ded74ff" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="b9d2ed22-ff43-4a96-8a73-bc7816ca501e" name="Generalize event" isLeaf="false">
+            <elementDefinition Id="4890d2e5-f03e-46b4-85c7-853abb9c31a0" />
+            <objectFlowTargets>
+              <objectFlow Id="d5055917-9401-4ec2-a29d-a0b0c63ef077" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <objectNodeMoniker Id="1adb0fe6-392a-477e-b225-0ca04a7bbcff" LastKnownName="Generic event" />
+                <elementDefinition Id="3a91acd7-f8d5-4639-8413-c993274e7cd5" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <objectNode Id="e2187996-dd14-436c-8f6c-637d12bfc927" name="Vendor-specific event data" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="6d35ffd1-6236-437f-a04f-f9df18a06f0b" />
+            <objectFlowTargets>
+              <objectFlow Id="a8e03df4-2d35-4a70-9408-ba7e94467daa" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="b9d2ed22-ff43-4a96-8a73-bc7816ca501e" LastKnownName="Generalize event" />
+                <elementDefinition Id="cd8a98d9-0a87-4b82-9590-6f862151e64f" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="6c05c90f-56f4-429c-b6e3-65b197342f61" name="2147483647" value="2147483647">
+                <elementDefinition Id="5c96941b-29d1-49e2-a378-25b69a694cdc" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <decisionNode Id="ba997919-5457-4497-8eed-be3e4d8875f3" name="Race active" isLeaf="false">
+            <elementDefinition Id="f3d1e50f-bdcf-454a-bc64-fd9bdcc5b5f2" />
+            <flowNodeTargets>
+              <controlFlow Id="babb1669-8bb9-4c6c-af50-30cdf1c579eb" guard="No race active" isLeaf="false">
+                <opaqueActionMoniker Id="87079b5b-d496-4b64-9bd8-c98b22a49eb0" LastKnownName="Record in trash transaction" />
+                <elementDefinition Id="f3a4cbb0-f6f0-4127-84c4-da2e15024732" />
+              </controlFlow>
+              <controlFlow Id="cb95f2fa-347b-4679-acac-364832a386d1" guard="Race active" isLeaf="false">
+                <decisionNodeMoniker Id="17aa7e8a-e7e7-4ef3-ab6d-a8c5f8e482ad" LastKnownName="Decision1" />
+                <elementDefinition Id="82c4ae55-6b18-4dcb-9b4b-03150ca84374" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <objectNode Id="1adb0fe6-392a-477e-b225-0ca04a7bbcff" name="Generic event" isLeaf="false" ordering="Unordered" isControlType="false">
+            <elementDefinition Id="5e84b4e1-3f86-40b2-96c4-03da062f085c" />
+            <objectFlowTargets>
+              <objectFlow Id="4d3e0e11-a892-442d-b2ea-c0672ac67536" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <opaqueActionMoniker Id="74e00664-abec-48c5-8cfa-f8c6805d5fb5" LastKnownName="Lookup active competitors" />
+                <elementDefinition Id="6c22486c-0be3-474a-a0c2-02b16400b7ce" />
+              </objectFlow>
+            </objectFlowTargets>
+            <upperBound>
+              <literalInteger Id="899618df-cd27-41d8-a680-1eb76e5656a7" name="2147483647" value="2147483647">
+                <elementDefinition Id="02d65c4a-d029-4157-999c-05743fb3f974" />
+              </literalInteger>
+            </upperBound>
+          </objectNode>
+          <opaqueAction Id="87079b5b-d496-4b64-9bd8-c98b22a49eb0" name="Record in trash transaction" isLeaf="false">
+            <elementDefinition Id="4af6d5a8-9342-4bac-802c-b06c17408ac5" />
+            <flowNodeTargets>
+              <controlFlow Id="0618a4cf-8b2f-44cb-93c1-ef26249431ab" isLeaf="false">
+                <activityFinalNodeMoniker Id="e129c09c-5fe5-4438-afee-925ffb4fa7bf" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="55ce7022-297c-4883-b47c-c08cf1f65d0b" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="0f27fc07-8740-43dc-a4a1-17b24a5732f1" name="Decision4" isLeaf="false">
+            <elementDefinition Id="3b211f32-aad1-4e39-b4fb-ae1fb2db5852" />
+            <flowNodeTargets>
+              <controlFlow Id="07cbb8eb-5fd6-4fe4-972a-02aa01750d95" guard="Clock running" isLeaf="false">
+                <opaqueActionMoniker Id="87079b5b-d496-4b64-9bd8-c98b22a49eb0" LastKnownName="Record in trash transaction" />
+                <elementDefinition Id="7fede272-17db-493e-9cbf-e655404b15d5" />
+              </controlFlow>
+              <controlFlow Id="b09854b3-42f3-45ab-8452-1953b11e6492" guard="Clock reset" isLeaf="false">
+                <opaqueActionMoniker Id="9b0e738e-0eff-47d1-88f4-205a25a9b8af" LastKnownName="Start clock" />
+                <elementDefinition Id="9a5bfbf5-ec75-411d-a844-24e318b4b54c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="9b0e738e-0eff-47d1-88f4-205a25a9b8af" name="Start clock" isLeaf="false">
+            <elementDefinition Id="6f200f63-0cdb-43b4-bd02-b52e00cf13a6" />
+            <flowNodeTargets>
+              <controlFlow Id="e849b486-533c-46f4-ad5c-9273f1f0965d" isLeaf="false">
+                <opaqueActionMoniker Id="6ea4db1d-6d26-4b9e-9607-6928f05ca81f" LastKnownName="Record in active race transactions" />
+                <elementDefinition Id="960bc01c-fb8b-4b96-a0ef-9d655a454d8d" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="74e00664-abec-48c5-8cfa-f8c6805d5fb5" name="Lookup active competitors" isLeaf="false">
+            <elementDefinition Id="0fc3749f-d400-47cd-8ab0-9693df6c1ec4" />
+            <flowNodeTargets>
+              <controlFlow Id="b811172c-393f-494c-9c50-6d6babd3a581" isLeaf="false">
+                <decisionNodeMoniker Id="ba997919-5457-4497-8eed-be3e4d8875f3" LastKnownName="Race active" />
+                <elementDefinition Id="4f4fe7bb-1864-4f5e-8066-7225d5e4a743" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="706df0cb-46d6-45e2-8cef-f3493c41e7f5" name="Lookup competitor" isLeaf="false">
+            <elementDefinition Id="52a70cf8-b9f9-4049-9d71-565bf3d3efb0" />
+            <flowNodeTargets>
+              <controlFlow Id="8f51f06e-ca92-4fcf-8b24-f3d4134790bf" isLeaf="false">
+                <decisionNodeMoniker Id="31a0f1dc-556a-4c44-a5cd-6827d8fabced" LastKnownName="Decision2" />
+                <elementDefinition Id="3756ccc7-2944-4682-9357-ae60ba69371c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <mergeNode Id="70f7eb12-c164-4502-8594-6ea1e0920595" name="Merge1" isLeaf="false">
+            <elementDefinition Id="e613b44b-db1c-4ecf-b61e-80a373b89d5a" />
+            <flowNodeTargets>
+              <controlFlow Id="658da53c-165a-4b24-b7ac-d03b59aa90e3" isLeaf="false">
+                <forkNodeMoniker Id="429ce7b9-9eee-4945-acba-9e53cd0491e5" LastKnownName="Fork1" />
+                <elementDefinition Id="1f69249e-4998-4d51-ab99-a144b7f50b32" />
+              </controlFlow>
+            </flowNodeTargets>
+          </mergeNode>
+          <forkNode Id="429ce7b9-9eee-4945-acba-9e53cd0491e5" name="Fork1" isLeaf="false">
+            <elementDefinition Id="ad817092-17d1-46b7-80a1-a73a0e2b7cbe" />
+            <flowNodeTargets>
+              <controlFlow Id="ae3aa4aa-48de-490b-877a-b18f10dbc23b" isLeaf="false">
+                <opaqueActionMoniker Id="9db10f78-f419-4ad5-b2e5-4d8d4d7d0507" LastKnownName="Update user interface" />
+                <elementDefinition Id="caa35fd8-61fc-4098-b5d5-561824f6e278" />
+              </controlFlow>
+              <controlFlow Id="6a549537-5c87-4921-995d-f461ecd8d786" isLeaf="false">
+                <opaqueActionMoniker Id="95eac435-1964-4001-bf5b-94582d8b4b5f" LastKnownName="Dispatch event to server" />
+                <elementDefinition Id="c393fc71-3d8f-4984-b742-02e11f1f7d77" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="9db10f78-f419-4ad5-b2e5-4d8d4d7d0507" name="Update user interface" isLeaf="false">
+            <elementDefinition Id="c2b7dc2d-7625-4dc5-a948-9e2b408eaa7d" />
+            <flowNodeTargets>
+              <controlFlow Id="5f003213-0241-4a42-b98d-9d0203c1a0f5" isLeaf="false">
+                <joinNodeMoniker Id="ca730e75-9e6d-4408-a7d8-3f0955e90dfc" LastKnownName="Join1" />
+                <elementDefinition Id="a0b23ef3-43e9-4c3c-bf5f-bd525606ed97" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="95eac435-1964-4001-bf5b-94582d8b4b5f" name="Dispatch event to server" isLeaf="false">
+            <elementDefinition Id="1fb9dbad-8717-401d-a12d-74e0150591f9" />
+            <flowNodeTargets>
+              <controlFlow Id="c6622bba-0264-4f77-9b2d-b977f4e84a79" isLeaf="false">
+                <joinNodeMoniker Id="ca730e75-9e6d-4408-a7d8-3f0955e90dfc" LastKnownName="Join1" />
+                <elementDefinition Id="00173411-bdc6-46cb-bb06-df02409ac034" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <joinNode Id="ca730e75-9e6d-4408-a7d8-3f0955e90dfc" name="Join1" isLeaf="false">
+            <elementDefinition Id="5c646337-6281-4f8c-bf34-fff97836879f" />
+            <flowNodeTargets>
+              <controlFlow Id="c0f5a27a-481e-472a-b622-0d8c6846e14f" isLeaf="false">
+                <activityFinalNodeMoniker Id="e129c09c-5fe5-4438-afee-925ffb4fa7bf" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="a9eff4ac-8eaf-4119-943d-acd5892179f4" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <opaqueAction Id="6ea4db1d-6d26-4b9e-9607-6928f05ca81f" name="Record in active race transactions" isLeaf="false">
+            <elementDefinition Id="cb3afc22-e41d-40f1-9e0e-d07f3efe43ab" />
+            <flowNodeTargets>
+              <controlFlow Id="a8d12a8f-0661-4db4-baf5-7adea146c96e" isLeaf="false">
+                <mergeNodeMoniker Id="70f7eb12-c164-4502-8594-6ea1e0920595" LastKnownName="Merge1" />
+                <elementDefinition Id="94d4cc0e-719f-414a-a76c-1e6878a32925" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <opaqueAction Id="8d3a87f4-79cd-469c-839a-8371667b5732" name="Record lap in race transaction" isLeaf="false">
+            <elementDefinition Id="72f1fde1-3eca-4b59-92de-164ca19bb861" />
+            <flowNodeTargets>
+              <controlFlow Id="f3d344c5-a8de-48fa-914c-b75b437acc7f" isLeaf="false">
+                <opaqueActionMoniker Id="9dbf654d-60d3-4382-aea4-4e2245750e3a" LastKnownName="Calculate speed" />
+                <elementDefinition Id="21b96986-baaf-4fba-88b0-b75865d0e762" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <decisionNode Id="908660c4-aee3-4a0e-b905-feba60174490" name="Decision5" isLeaf="false">
+            <elementDefinition Id="f2663ebd-011d-44ce-bf6a-aea12da53155" />
+            <flowNodeTargets>
+              <controlFlow Id="7c2c0f12-9017-42a8-bc3b-05d98008cff1" guard="Has lap" isLeaf="false">
+                <opaqueActionMoniker Id="8d3a87f4-79cd-469c-839a-8371667b5732" LastKnownName="Record lap in race transaction" />
+                <elementDefinition Id="d1d8adbb-39cb-461b-bf17-f3607e8b4c78" />
+              </controlFlow>
+              <controlFlow Id="f0dd0c20-3fb4-4f7d-8c42-e4bfd12a0f62" guard="No lap" isLeaf="false">
+                <opaqueActionMoniker Id="9dbf654d-60d3-4382-aea4-4e2245750e3a" LastKnownName="Calculate speed" />
+                <elementDefinition Id="0b091d0c-2151-4483-9d3c-efa12af5a043" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <decisionNode Id="76c4071c-06e2-4b19-82ec-2d3c51700eda" name="Decision6" isLeaf="false">
+            <elementDefinition Id="af1ddbc8-ee25-4f98-8753-97ba039a9f08" />
+            <flowNodeTargets>
+              <controlFlow Id="ce6993a0-fd27-4d78-a378-5c993e89fdc5" guard="Has speed" isLeaf="false">
+                <opaqueActionMoniker Id="956d3c43-168f-41f2-a446-401797b2338e" LastKnownName="Record speed in race transaction" />
+                <elementDefinition Id="c564da31-cb91-4367-a1c9-df7abf601151" />
+              </controlFlow>
+              <controlFlow Id="3410d73d-3cf0-40d9-ad18-87884d17110b" guard="No speed" isLeaf="false">
+                <mergeNodeMoniker Id="70f7eb12-c164-4502-8594-6ea1e0920595" LastKnownName="Merge1" />
+                <elementDefinition Id="ce7edd82-098b-4d07-8f2e-4f933c8b70bb" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="956d3c43-168f-41f2-a446-401797b2338e" name="Record speed in race transaction" isLeaf="false">
+            <elementDefinition Id="b8055dac-e9c3-46c0-8203-408a98c6d278" />
+            <flowNodeTargets>
+              <controlFlow Id="6b8bc1b7-06a1-4f21-a357-462316d4ab69" isLeaf="false">
+                <mergeNodeMoniker Id="70f7eb12-c164-4502-8594-6ea1e0920595" LastKnownName="Merge1" />
+                <elementDefinition Id="3a77d891-038a-4b29-98ad-c723e39fd8ad" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="c8e83318-5d9d-411b-b2e9-d86320b74b4d" name="Sports.Architecture">
+    <elementDefinition Id="ba050b7e-0cce-40b2-b8ee-8010a7f98fba" />
+    <profileInstances>
+      <packageHasProfileInstances Id="c172bbc4-4b02-4ff7-a90a-dd3ec41bae1d">
+        <profileInstance Id="54f675a1-706d-437d-b63f-8e96bd46ad76" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="9988bc3e-b80e-43e4-808c-e9bbebb37c9d">
+        <profileInstance Id="ba3b4211-ddbc-4781-81e5-8d498b6987a0" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</activityRootModel>

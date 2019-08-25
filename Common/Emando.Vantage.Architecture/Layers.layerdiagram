@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="646d22f6-81ac-4b18-8d65-89b5799118af" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <comments>
+    <comment Id="017f23fa-5d1a-47b8-8507-85eb47bff9da" name="Comment1">
+      <body>Contains specific implementations of sport disciplines using standardized components</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="810c603d-df4a-4f98-b693-0c8d6d1e27bb" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+    <comment Id="bdc8e94b-3516-4f19-8253-d8da44b48edf" name="Comment2">
+      <body>Standardized components that can be used to implement specific sport disciplines</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="4a0d7ac8-7c10-4606-b666-a5a0f2cbc836" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+    <comment Id="62485d8f-2696-4a07-8f15-514f2980ff1e" name="Comment3">
+      <body>Contains interfacing with timing hardware (e.g. MyLaps X2) and abstractions from vendor specific operations and data</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="06b21b6a-7207-4fe0-a6f9-84e86730ec2f" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+    <comment Id="5e6b5a52-49ad-4b3b-a3d0-556513ba1809" name="Comment4">
+      <body>Façades encapsulate commonly used business workflow and components</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="031497b0-8253-4f1c-81ff-83beb1a7a876" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+    <comment Id="5fdf1190-7a33-41f3-bc7f-2dd9ca546761" name="Comment5">
+      <body>Provides access to business logic through standardized interfaces and implements logging, security, exception handling, etc.</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="93d425eb-5791-44ef-a33a-0e3171935c17" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+    <comment Id="5a4de12d-fd70-4c00-9e54-0bb2720ce6a5" name="Comment6">
+      <body>Contains agents to external services</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="de985ee2-91b0-47dd-91bb-5c87f994c42a" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+    <comment Id="7b650d9b-8f29-4876-af26-99c0e18135e1" name="Comment7">
+      <body>Contains implementations of real world entities of disciplines (e.g. competition, race, competitor, transponder set, etc.)</body>
+      <layerElements>
+        <linkFromCommentToLayerElement>
+          <layerMoniker Id="7b23d605-cf4f-4851-ac2b-22729d769ba6" />
+        </linkFromCommentToLayerElement>
+      </layerElements>
+    </comment>
+  </comments>
+  <layers>
+    <layer Id="806267b6-2cd4-47bc-b82a-e2aac2f85d7f" name="Presentation Layer">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="1dc53b00-a36a-4192-94f5-a2f39f18a710" direction="Bidirectional">
+          <layerMoniker Id="cbc1e957-17a2-4f12-a37d-b749b6e958ff" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="ce81abf9-bb16-45c8-b0b9-b181e317f1d7" direction="Forward">
+          <layerMoniker Id="93d425eb-5791-44ef-a33a-0e3171935c17" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="18d3b525-7385-4293-9699-fb8d758b56de" name="UI Components">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="892452d4-5324-46c2-9c88-ba9dac446dfb" direction="Forward">
+              <layerMoniker Id="6b3d6ed1-0e1c-4fb6-a193-ba2bb0784cc7" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="6b3d6ed1-0e1c-4fb6-a193-ba2bb0784cc7" name="UI Process Components" />
+      </childLayers>
+    </layer>
+    <layer Id="e7b4fd09-500b-4227-bce6-9d3c97b957c6" name="Business Layer">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="9c5551c6-e053-4b6d-aae8-c5823dcfd197" direction="Bidirectional">
+          <layerMoniker Id="cbc1e957-17a2-4f12-a37d-b749b6e958ff" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="3aebaaf0-1c41-4ff9-973c-de412c4129de" direction="Forward">
+          <layerMoniker Id="5ef748a1-e30a-4540-b184-b96b6017a97d" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="ada84e73-3541-4f20-a6b6-701a606ad394" name="Business Workflow">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="7d59bdcc-2b05-4949-95c9-06e5c9bff372" direction="Forward">
+              <layerMoniker Id="977c7a37-0df2-4cff-aa1e-bd9c25ca3c24" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+          <childLayers>
+            <layer Id="810c603d-df4a-4f98-b693-0c8d6d1e27bb" name="Disciplines" />
+          </childLayers>
+        </layer>
+        <layer Id="977c7a37-0df2-4cff-aa1e-bd9c25ca3c24" name="Business Components">
+          <childLayers>
+            <layer Id="4a0d7ac8-7c10-4606-b666-a5a0f2cbc836" name="Discipline Components" />
+          </childLayers>
+        </layer>
+        <layer Id="031497b0-8253-4f1c-81ff-83beb1a7a876" name="Application Façade">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="b4126462-8a25-4e90-808b-f697b95e4e8b" direction="Forward">
+              <layerMoniker Id="ada84e73-3541-4f20-a6b6-701a606ad394" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="15847783-119c-48b6-b840-2ed06d7ea8b4" direction="Forward">
+              <layerMoniker Id="977c7a37-0df2-4cff-aa1e-bd9c25ca3c24" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="5ef748a1-e30a-4540-b184-b96b6017a97d" name="Data Layer">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="32390c3d-0cc7-4e6f-9010-72b3ad452e1f" direction="Bidirectional">
+          <layerMoniker Id="cbc1e957-17a2-4f12-a37d-b749b6e958ff" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="de985ee2-91b0-47dd-91bb-5c87f994c42a" name="Service Agents" />
+        <layer Id="376d4ab2-c891-4e84-9fb6-498a90028ef8" name="Data Helpers/Utilities" />
+        <layer Id="f3c408bc-4f0b-4397-bc95-d321ec014ba2" name="Data Access Components">
+          <childLayers>
+            <layer Id="06b21b6a-7207-4fe0-a6f9-84e86730ec2f" name="Appliances" />
+            <layer Id="3c491c36-50b8-46f5-ad8d-fc7e43e804d4" name="Databases" />
+          </childLayers>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="cbc1e957-17a2-4f12-a37d-b749b6e958ff" name="Cross-cutting">
+      <childLayers>
+        <layer Id="990d0436-e020-4831-87ad-5c0876ec5f90" name="Security" />
+        <layer Id="286286f7-b4a5-487c-9e44-609381f979de" name="Operational management">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="475389d4-8b86-4cfb-9cb4-a4cc769d09c6" direction="Forward">
+              <layerMoniker Id="1a1a3d45-a7d1-4bce-a64b-0f7e24b57699" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="45cbee86-abe7-4696-bd72-25d7cb32c4bd" name="Communication" />
+        <layer Id="1a1a3d45-a7d1-4bce-a64b-0f7e24b57699" name="Domain">
+          <childLayers>
+            <layer Id="7b23d605-cf4f-4851-ac2b-22729d769ba6" name="Discipline Entities" />
+          </childLayers>
+        </layer>
+      </childLayers>
+    </layer>
+    <layer Id="93d425eb-5791-44ef-a33a-0e3171935c17" name="Services Layer">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="69683442-baaa-4f4d-a475-5e3cd3fb0bd5" direction="Forward">
+          <layerMoniker Id="e7b4fd09-500b-4227-bce6-9d3c97b957c6" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="3caca6ec-3acb-421b-9dcc-2055dcf3b755" direction="Bidirectional">
+          <layerMoniker Id="cbc1e957-17a2-4f12-a37d-b749b6e958ff" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <childLayers>
+        <layer Id="38661f33-ba9c-4f3b-a2d7-80e9f2f5fb3e" name="Service Interfaces">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="533b299f-a3ef-42f7-8fdf-be8e16e51c52" direction="Forward">
+              <layerMoniker Id="4fa0d1cc-1322-4ad5-bdd3-59e69480a038" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+        <layer Id="4fa0d1cc-1322-4ad5-bdd3-59e69480a038" name="Message Types" />
+        <layer Id="c6dde6e1-f7d8-495e-b575-c826ce38313c" name="Service Implementations">
+          <dependencyToLayers>
+            <dependencyFromLayerToLayer Id="9446b9e4-615a-4cdf-b02e-4efb1aca4b75" direction="Forward">
+              <layerMoniker Id="38661f33-ba9c-4f3b-a2d7-80e9f2f5fb3e" />
+            </dependencyFromLayerToLayer>
+            <dependencyFromLayerToLayer Id="069210e1-cd2a-4e60-8fbe-e0a287ba988e" direction="Forward">
+              <layerMoniker Id="4fa0d1cc-1322-4ad5-bdd3-59e69480a038" />
+            </dependencyFromLayerToLayer>
+          </dependencyToLayers>
+        </layer>
+      </childLayers>
+    </layer>
+  </layers>
+</layerModel>
